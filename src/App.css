@@ -36,3 +36,128 @@
     transform: rotate(360deg);
   }
 }
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F2F4F7;
+}
+
+.Auth-form {
+  width: 420px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  left: 12px;
+
+}
+
+.Auth-form-content {
+  padding-left: 0%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.vl {
+  position: absolute;
+  left: 49.47%;
+  right: 50.42%;
+  top: 0%;
+  bottom: 0%;
+  background: #FFFFFF;
+  border: 1px solid #DAE1F5;
+  width: 1.49px;
+  height: 100%;
+
+}
+
+.button-submit{
+  position: absolute;
+  background-color: #111F4D;
+  color: white;
+  left: 12.09%;
+  right: 56.89%;
+  top: 61.94%;
+  bottom: 30.81%;
+  height: 74.23px;
+  
+}
+.email-form{
+  position: absolute;
+  left: 12.01%;
+  right: 57.01%;
+  top: 25.2%;
+  bottom: 63.87%;
+}
+
+.password-form{
+  position: absolute;
+  left: 11.99%;
+  right: 56.99%;
+  top: 39.54%;
+  bottom: 49.42%;
+
+}
+
+.remember-checkbox{
+  position: absolute;
+  left: 11.99%;
+  right: 75.19%;
+  top: 55.97%;
+  bottom: 43%;
+
+}
+
+.forgot-password{
+  position: absolute;
+height: 18px;
+left: 35.07%;
+right: 56.88%;
+top: 53.27%;
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+text-align: right;
+
+color: #306BF3;
+
+}
+.login-info-section{
+  position: absolute;
+  left: 54.57%;
+  right: 5.61%;
+  top: 22.25%;
+  bottom: 64.9%;
+  
+}
+
+.schedule-image{
+  width: 18px;
+  height: 18px;
+}
+.logo-header{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
