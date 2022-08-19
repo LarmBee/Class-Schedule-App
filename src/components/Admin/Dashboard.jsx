@@ -1,19 +1,20 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Card from 'react-bootstrap/Card';
-import "./student.css"
+import "./Dashboard.css"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
-function Student() {
+function Dashboard() {
   return (
     <>
       <Container className='contai'>
         <Row>
         <Col sm={8}>
         <h1 className='col mt-0'>
-          hello <span>User</span>
+          hello <span>Admin</span>
         </h1>
         </Col>
         <Col sm={4}>
@@ -27,6 +28,18 @@ function Student() {
         </Col>
         </Row>
       </Container>
+      <div className="buttons">
+      <div className="btn bg-#111F4D">
+      <button type='submit'><a href="#formuser">Add user</a></button>
+      </div>
+      <div className="btn ml-5">
+      <button type='submit'><a href="#formuser">Create session</a></button>
+      </div>
+      <div className="btn ml-5">
+      <button type='submit'><a href="#formuser">Add Announcement</a></button>
+      </div>
+      </div>
+      
       <div className="search">
         <form>
           <label
@@ -162,7 +175,7 @@ function Student() {
         </Card>
       </div>
     </>
-  );
+  )
 }
 
-export default Student
+export default Dashboard

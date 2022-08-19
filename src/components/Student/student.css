@@ -29,17 +29,20 @@
 .stu{
     display: flex;
     margin-right: 10px;
-    background-color: brown;
+    /* background-color: brown; */
 
 }
-
+.contai{
+    margin-left: 22vw;
+    /* margin-top: 5vh; */
+}
 .head{
     display: flex;
 }
 .head > .user{
     margin-right: 10vw;
     justify-items: end;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .cont{
     margin-top: 60px;
@@ -54,6 +57,7 @@
     border: solid 2px;
     border-radius: 10px;
 }
-/* .stu > h1{
-    margin-left: 10px;
-} */
+a{
+    text-decoration: none;
+    color: black;
+}
