@@ -1,19 +1,22 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Card from 'react-bootstrap/Card';
+import "./student.css"
 
 function Student() {
   return (
     <>
-      <div>
+      <div className='head'>
         <h1>
           hello <span>User</span>
         </h1>
+        <div className="user">
         <img
           src="https://img.icons8.com/metro/2x/user-male-circle.png"
           alt="User"
         />
         <a href="#edit">Edit</a>
+        </div>
       </div>
       <div className="search">
         <form>
@@ -24,7 +27,7 @@ function Student() {
             Search
           </label>
           <div class="relative">
-            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <div class="flex absolute inset-y-0 right-5 items-center pl-3 pointer-events-none">
               <svg
                 aria-hidden="true"
                 class="w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -41,19 +44,14 @@ function Student() {
                 ></path>
               </svg>
             </div>
-            <input
+            <input 
               type="search"
               id="default-search"
-              class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search Mockups, Logos..."
+              class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search available sessions..."
               required
             />
-            <button
-              type="submit"
-              class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Search
-            </button>
+      
           </div>
         </form>
       </div>
@@ -83,51 +81,77 @@ function Student() {
           </div>
         </aside>
       </div>
-        <Card className='card'>
+      <div className="cards">
+        <Card>
           <Card.Body>
-            <blockquote className="blockquote mb-0">
-              <p>
+          <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
+          <div className="stu">
+          <blockquote className="blockquote mb-0">
+              <h1>
                 {" "}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.{" "}
-              </p>
-              <footer className="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </footer>
+                Thursday Speaker Series{" "}
+              </h1>
+              <p>16:00pm</p>
+              
             </blockquote>
+            <div className="rea">
+            <div className="like">
+            <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-Like-vote-and-reward-those-icons-lineal-those-icons.png" alt="like" />
+            </div>
+            <div className="comment">
+            <img src="https://img.icons8.com/windows/2x/comments.png" alt="comment" />
+            </div>
+            </div>
+          </div>
           </Card.Body>
         </Card>
         <Card>
-          {/* <Card.Header>Quote</Card.Header> */}
           <Card.Body>
-            <blockquote className="blockquote mb-0">
-              <p>
+          <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
+          <div className="stu">
+          <blockquote className="blockquote mb-0">
+              <h1>
                 {" "}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.{" "}
-              </p>
-              <footer className="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </footer>
+                Thursday Speaker Series{" "}
+              </h1>
+              <p>16:00pm</p>
+              
             </blockquote>
+            <div className="rea">
+            <div className="like">
+            <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-Like-vote-and-reward-those-icons-lineal-those-icons.png" alt="like" />
+            </div>
+            <div className="comment">
+            <img src="https://img.icons8.com/windows/2x/comments.png" alt="comment" />
+            </div>
+            </div>
+          </div>
           </Card.Body>
         </Card>
         <Card>
-          {/* <Card.Header>Quote</Card.Header> */}
           <Card.Body>
-            <blockquote className="blockquote mb-0">
-              <p>
+          <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
+          <div className="stu">
+          <blockquote className="blockquote mb-0">
+              <h1>
                 {" "}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante.{" "}
-              </p>
-              <footer className="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </footer>
+                Thursday Speaker Series{" "}
+              </h1>
+              <p>16:00pm</p>
+              
             </blockquote>
+            <div className="rea">
+            <div className="like">
+            <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-Like-vote-and-reward-those-icons-lineal-those-icons.png" alt="like" />
+            </div>
+            <div className="comment">
+            <img src="https://img.icons8.com/windows/2x/comments.png" alt="comment" />
+            </div>
+            </div>
+          </div>
           </Card.Body>
         </Card>
-      {/* </div> */}
+      </div>
     </>
   );
 }
