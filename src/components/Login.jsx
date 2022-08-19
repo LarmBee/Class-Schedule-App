@@ -45,7 +45,7 @@ function Login() {
 					</div>
 					{/* Forgot Password Section  */}
 					<p className="forgot-password text-left mt-2">
-						<a href="">Forgot password?</a>
+						{/* <a href="">Forgot password?</a> */}
 					</p>
 					{/* Submit Button  */}
 					<div className="d-grid gap-2 mt-3">
