@@ -22,4 +22,12 @@ button > a{
 button > a:hover{
     color: white;
 }
-
+.search{
+    margin-top: -100px;
+}
+.cardcontent{
+    display: flex;
+}
+.rea{
+    margin-left: 18vw;
+}
