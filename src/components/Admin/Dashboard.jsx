@@ -14,7 +14,7 @@ function Dashboard() {
         <Row>
           <Col sm={8}>
             <h1 className='col mt-0'>
-              hello <span>Admin</span>
+              hello <span>Super Admin</span>
             </h1>
           </Col>
           <Col sm={4}>
