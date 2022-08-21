@@ -109,7 +109,7 @@ function Dashboard() {
             <div className="cardcontent ">
 
               <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
+              <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
               </div>
 
               <div className="stu ml-8">
@@ -138,7 +138,7 @@ function Dashboard() {
             <div className="cardcontent ">
 
               <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
+                <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
               </div>
 
               <div className="stu ml-8">
@@ -167,7 +167,7 @@ function Dashboard() {
             <div className="cardcontent ">
 
               <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
+              <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
               </div>
 
               <div className="stu ml-8">
@@ -196,7 +196,7 @@ function Dashboard() {
             <div className="cardcontent ">
 
               <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
+              <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
               </div>
 
               <div className="stu ml-8">
