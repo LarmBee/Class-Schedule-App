@@ -1,0 +1,14 @@
+.cardannounce{
+    height: 60vh;
+    width: 60vw;
+    /* border: solid 1px; */
+    /* margin-left: 10vw; */
+    margin-left: auto;
+    margin-right: auto;
+}
+Card{
+ /* align-items: center; */
+ /* justify-self: center; */
+ display: flex;
+ 
+}
