@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 function Landing() {
   return (<>
-    <Card body className="typed m-lg-3 mx-4">
+    <Card className="typed m-lg-3 mx-4">
         <Typed
           strings={[
             "Welcome To St Paul's Nyabururu College",
