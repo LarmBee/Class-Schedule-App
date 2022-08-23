@@ -16,6 +16,10 @@
 }
 .news{
     margin-left: 25vw;
-    margin-top: -40vw;
+    margin-top: -37vw;
+}
+.search{
+    width: 40vw;
+    /* margin-top: -40vh; */
 }
 
