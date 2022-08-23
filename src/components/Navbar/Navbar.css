@@ -1,6 +1,8 @@
-.navba{
-    /* background-color: blue; */
-}
 .soc img{
     height: 2.8rem;
+}
+.link{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
