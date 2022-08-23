@@ -11,11 +11,13 @@ function NavBar() {
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
+          <div className="links">
           <Nav className="me-auto">
             <Nav.Link className="link" as = {Link} to = {"/home"}>Home</Nav.Link>
             <Nav.Link className="link" as = {Link} to = {"/student"}>Student</Nav.Link>
             <Nav.Link className="link" as = {Link} to = {"/admin"}>Admin</Nav.Link>
           </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
       </Navbar>

@@ -1,6 +1,5 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import Card from 'react-bootstrap/Card';
 import "./student.css"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -70,8 +69,7 @@ function Student() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
-                  className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   <svg
                     aria-hidden="true"
@@ -91,122 +89,6 @@ function Student() {
         </aside>
       </div>
       <div className="cards">
-      <Card>
-          <Card.Body>
-            <div className="cardcontent ">
-
-              <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
-              </div>
-
-              <div className="stu ml-8">
-                <blockquote className="blockquote mb-0">
-                  <h1>
-                    {" "}
-                    Thursday Speaker Series{" "}
-                  </h1>
-                  <p>16:00pm</p>
-
-                </blockquote>
-                <div className="rea">
-                  <div className="like">
-                    <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-Like-vote-and-reward-those-icons-lineal-those-icons.png" alt="like" />
-                  </div>
-                  <div className="comment ml-4">
-                    <img src="https://img.icons8.com/windows/2x/comments.png" alt="comment" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Card.Body>
-        </Card>
-        <Card>
-          <Card.Body>
-            <div className="cardcontent ">
-
-              <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
-              </div>
-
-              <div className="stu ml-8">
-                <blockquote className="blockquote mb-0">
-                  <h1>
-                    {" "}
-                    Thursday Speaker Series{" "}
-                  </h1>
-                  <p>16:00pm</p>
-
-                </blockquote>
-                <div className="rea">
-                  <div className="like">
-                    <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-Like-vote-and-reward-those-icons-lineal-those-icons.png" alt="like" />
-                  </div>
-                  <div className="comment ml-4">
-                    <img src="https://img.icons8.com/windows/2x/comments.png" alt="comment" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Card.Body>
-        </Card>
-        <Card>
-          <Card.Body>
-            <div className="cardcontent ">
-
-              <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
-              </div>
-
-              <div className="stu ml-8">
-                <blockquote className="blockquote mb-0">
-                  <h1>
-                    {" "}
-                    Thursday Speaker Series{" "}
-                  </h1>
-                  <p>16:00pm</p>
-
-                </blockquote>
-                <div className="rea">
-                  <div className="like">
-                    <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-Like-vote-and-reward-those-icons-lineal-those-icons.png" alt="like" />
-                  </div>
-                  <div className="comment ml-4">
-                    <img src="https://img.icons8.com/windows/2x/comments.png" alt="comment" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Card.Body>
-        </Card>
-        <Card>
-          <Card.Body>
-            <div className="cardcontent ">
-
-              <div className="cardimg">
-                <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" />
-              </div>
-
-              <div className="stu ml-8">
-                <blockquote className="blockquote mb-0">
-                  <h1>
-                    {" "}
-                    Thursday Speaker Series{" "}
-                  </h1>
-                  <p>16:00pm</p>
-
-                </blockquote>
-                <div className="rea">
-                  <div className="like">
-                    <img src="https://img.icons8.com/external-those-icons-lineal-those-icons/2x/external-Like-vote-and-reward-those-icons-lineal-those-icons.png" alt="like" />
-                  </div>
-                  <div className="comment ml-4">
-                    <img src="https://img.icons8.com/windows/2x/comments.png" alt="comment" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Card.Body>
-        </Card>        
       </div>
     </>
   );
