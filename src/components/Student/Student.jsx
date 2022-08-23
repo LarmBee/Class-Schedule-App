@@ -27,35 +27,53 @@ function Student() {
           </Col>
         </Row>
       </Container>
-      <div className="cards">
-      {[
-        'Primary',
-        'Secondary',
-        'Success',
-        'Danger',
-        'Warning',
-        'Info',
-        'Light',
-        'Dark',
-      ].map((variant) => (
-        <Card className="cards mb-2"
-          bg={variant.toLowerCase()}
-          key={variant}
-          text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-          style={{ width: '18rem' }}
-        >
-          <Card.Header>Header</Card.Header>
-          <Card.Body>
-            <Card.Title>{variant} Card Title </Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      ))}
+      <div className="announcements">
+      <Container><Card style={{ width: '18rem', height:"80vh"}}>
+      <Card.Body>
+        <Card.Title>Announcements</Card.Title>
+      </Card.Body>
+    </Card></Container>
       </div>
-      <h1>Students</h1>
+      <div className='news'>
+      <div className='ne p-5'>
+        <h1 className='h1-news'>Sessions</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1525921429624-479b6a26d84d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sbGVnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Effective Renewable energy</h5>
+              </div>
+              <div class="card-footer">
+                <p>May 5, 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29sbGVnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Effective Renewable energy</h5>
+              </div>
+              <div class="card-footer">
+              <p>June 5, 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29sbGVnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Effective Renewable energy</h5>
+              </div>
+              <div class="card-footer">
+              <p>May 5, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }
