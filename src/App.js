@@ -1,26 +1,21 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
-import Dashboard from "./components/Admin/Dashboard";
-import Student from "./components/Student/Student";
+
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/Navbar/Navbar.jsx';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Home from "./components/Home/Home.jsx"
+
 
 function App() {
-	return (
-    <BrowserRouter>
+  return (
+    <div className="App">
+    <Router>
+    <NavBar/>
     <Routes>
-
-      {/* login path */}
-      <Route path="/" element={<Login />} />
-
-      {/* Admin/Dashboard section */}
-      <Route path="/admin" element={<Dashboard/>} />
-
-      {/* User/Student section */}
-      <Route path="/student" element={<Student/>}/>
+      <Route path="/home" element={<Home />}/>
     </Routes>
-    
-  </BrowserRouter>
-	);
-}
+  </Router>
+  </div>
+)}
 
 export default App;
