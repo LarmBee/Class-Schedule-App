@@ -4,21 +4,21 @@ import Card from 'react-bootstrap/Card';
 
 function Landing() {
   return (<>
-    <Card className="typed m-lg-3 mx-4">
+    <Card className="typed " style={{height: "70vh", width: "40vw"}}>
         <Typed
           strings={[
-            "Welcome To St Paul's Nyabururu College",
-            "We value our students",
-            "We are glad to serve you"
+            "Ratiba"
           ]}
           typeSpeed={150}
           backSpeed={150}
           loop
         />
-        <h4 style={{margin:"15px"}}>Website with Saasland</h4>
-        <p style={{fontSize: "20px",margin:"10px"}}>Launch your new website in style with SaasLand,
-        a complete collection of carefully
-        crafted pages, modular components and awesome features.</p>
+        <h4 style={{margin:"15px"}}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, consequatur.
+        </h4>
+        <p style={{fontSize: "20px",margin:"10px"}}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, dolores.
+        </p>
       </Card>
     </>
   );
