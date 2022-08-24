@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import "./student.css";
 import User from "../Student/User/User.js"
@@ -99,6 +100,40 @@ function Student() {
 //               </div>
 //             </div>
 //           </div>
+=======
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import "./student.css"
+// import Photo from "../../images/Miss.jpeg"
+import Like from "../../images/Like.png"
+import Comment from "../../images/Comment.png"
+import User from "../User/User.js"
+
+function Student() {
+  return (
+    <div className="Cont">
+    <User/>
+      <div className="container">
+      {/* <div className="row">
+          <div className="row">
+            <div className="user d-flex">
+            <div className="col-md-10">
+            <h1>
+                Hello <span>User</span>
+              </h1>
+            </div>
+              <div className="avatar col-md-2">
+                <img
+                  src={Photo}
+                  alt="Photo"
+                  style={{ height: "12vh", borderRadius: "50%" }}
+                />
+                <a>Edit</a>
+              </div>
+            </div>
+          </div>
+>>>>>>> 7a71bef (Style landing page)
         
 <<<<<<< HEAD
 //       </div> */}

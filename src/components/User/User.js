@@ -1,22 +1,37 @@
-import React from 'react'
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Photo from "../../images/Miss.jpeg"
 
 function User() {
   return (
-    <div>
-        <div className="row">
-            <div className="col-md-4">
+    <Navbar collapseOnSelect expand="lg md-sm-col-12">
+      <Container>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
             <h1>
-                Hello <span>User</span>
-              </h1>
-            </div> 
-            <div className="avatar col-md-2">
-                <img src={Photo} alt="Photo" style={{ height: "12vh", borderRadius: "50%" }}/>
-                <a>Edit</a>
-              </div> 
-        </div>
-    </div>
-  )
+              Hello <span>User</span>
+            </h1>
+          </Nav>
+          <Nav>
+          <div className="use">
+          <img src={Photo} alt="Photo" style={{ height: "12vh", borderRadius: "50%"}} />
+          <NavDropdown title="Edit" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Name</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Avatar</NavDropdown.Item>
+              <NavDropdown.Divider />
+            </NavDropdown>
+          </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
-export default User
+export default User;
