@@ -60,7 +60,7 @@ function Student() {
                   <img src={Comment} alt="Comment" />
                 </div>
               </div>
-              <div className="card col-md-3 col-sm-12 m-2 ">
+              <div className="card col-md-3 col-sm-12 m-2">
                 <div className="info">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
