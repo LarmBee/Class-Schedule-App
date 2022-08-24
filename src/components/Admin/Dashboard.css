@@ -4,12 +4,22 @@
 .user > a{
     text-decoration: none;
     color: black;
+    
+}
+.user{
+    margin-left: 2vw;
 }
 .buttons{
-    margin-left: 38vw;
-    /* justify-content: space-between; */
+    margin-bottom: 3vw;
 }
 .btn{
+    /* background-color: #111F4D; */
+    color: white;
+    margin-bottom: 2vw;
+    margin-top: 1vh;
+
+}
+.sidebar{
     background-color: #111F4D;
 }
 .btn:hover{
@@ -23,7 +33,7 @@ button > a:hover{
     color: white;
 }
 .search{
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 .cardcontent{
     display: flex;
@@ -31,3 +41,17 @@ button > a:hover{
 .rea{
     margin-left: 18vw;
 }
+.cardbody {
+    background-color: #111F4D;
+    color: white;
+    
+}
+.logo-header{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .card-title{
+    margin-top: 5vh;
+  }

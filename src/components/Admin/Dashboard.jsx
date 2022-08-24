@@ -1,44 +1,30 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import Card from 'react-bootstrap/Card';
+// import Card from 'react-bootstrap/Card';
 import "./Dashboard.css"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 // import Button from 'react-bootstrap/Button';
 
 function Dashboard() {
   return (
     <>
+
       <Container className='contai mt-16'>
         <Row>
+          
           <Col sm={8}>
             <h1 className='col mt-0'>
               hello <span>Super Admin</span>
             </h1>
           </Col>
-          <Col sm={4}>
-            <div className="user mt-0">
-              <img
-                src="https://img.icons8.com/metro/2x/user-male-circle.png"
-                alt="User"
-              />
-              <a href="#edit">Edit</a>
-            </div>
-          </Col>
+          
         </Row>
       </Container>
-      <div className="buttons mt-4">
-        <div className="btn bg-#111F4D">
-          <button type='submit'><a href="#formuser">Add user</a></button>
-        </div>
-        <div className="btn ml-5">
-          <button type='submit'><a href="#formuser">Create session</a></button>
-        </div>
-        <div className="btn ml-5">
-          <button type='submit'><a href="#formuser">Add Announcement</a></button>
-        </div>
-      </div>
+
 
       <div className="search ">
         <form>
@@ -77,7 +63,48 @@ function Dashboard() {
           </div>
         </form>
       </div>
-      <div className="sidebar">
+
+      <div className="sidebarcard">
+
+        <Card style={{ width: '18rem',
+                        height: '100vh',
+                        marginTop: '-14vh'
+                        
+                       }}  >
+          
+          <Card.Body className="cardbody bg-blue">
+            <div className="logo-head">
+      <h1 className="logo-header">Ratiba</h1>
+      <Col sm={4}>
+            <div className="user mt-24">
+              <img
+                src="https://img.icons8.com/metro/2x/user-male-circle.png"
+                alt="User"
+              />
+              <a href="#edit">Edit</a>
+            </div>
+          </Col>
+
+            </div>
+            <Card.Title className='card-title'>Hello Special TM</Card.Title>
+            <Card.Text>
+            <div className="buttons ">
+                  <div className="btn bg-#111F4D">
+                    <button type='submit'><a href="#formuser">Add user</a></button>
+                  </div>
+                  <div className="btn ">
+                    <button type='submit'><a href="#formuser">Create session</a></button>
+                  </div>
+                  <div className="btn ">
+                    <button type='submit'><a href="#formuser">Add Announcement</a></button>
+                  </div>
+                </div>
+            </Card.Text>
+            <Button className="buttons ">Logout</Button>
+          </Card.Body>
+        </Card>
+      </div>
+      {/* <div className="sidebar">
         <aside className="w-64" aria-label="Sidebar">
           <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
             <ul className="space-y-2">
@@ -89,7 +116,7 @@ function Dashboard() {
                   <svg
                     aria-hidden="true"
                     className="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                    fill="currentColor"
+                    // fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -98,18 +125,29 @@ function Dashboard() {
                   </svg>
                   <span className="ml-3">Announcements</span>
                 </a>
+                <div className="buttons ">
+                  <div className="btn bg-#111F4D">
+                    <button type='submit'><a href="#formuser">Add user</a></button>
+                  </div>
+                  <div className="btn ">
+                    <button type='submit'><a href="#formuser">Create session</a></button>
+                  </div>
+                  <div className="btn ">
+                    <button type='submit'><a href="#formuser">Add Announcement</a></button>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
         </aside>
-      </div>
+      </div> */}
       <div className="cards">
         <Card>
           <Card.Body>
             <div className="cardcontent ">
 
               <div className="cardimg">
-              <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
+                <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
               </div>
 
               <div className="stu ml-8">
@@ -167,7 +205,7 @@ function Dashboard() {
             <div className="cardcontent ">
 
               <div className="cardimg">
-              <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
+                <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
               </div>
 
               <div className="stu ml-8">
@@ -196,7 +234,7 @@ function Dashboard() {
             <div className="cardcontent ">
 
               <div className="cardimg">
-              <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
+                <a href='#'><img src="https://img.icons8.com/external-anggara-flat-anggara-putra/2x/external-video-user-interface-anggara-flat-anggara-putra-3.png" alt="Video" /></a>
               </div>
 
               <div className="stu ml-8">
@@ -220,7 +258,7 @@ function Dashboard() {
             </div>
           </Card.Body>
         </Card>
-        
+
       </div>
     </>
   )
