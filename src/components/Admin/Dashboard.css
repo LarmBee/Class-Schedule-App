@@ -1,33 +1,9 @@
-.contai{
-    margin-left: 22vw;
+.Cont{
+    background-color: #72FFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
-.user > a{
-    text-decoration: none;
-    color: black;
-}
-.buttons{
-    margin-left: 38vw;
-    /* justify-content: space-between; */
-}
-.btn{
-    background-color: #111F4D;
-}
-.btn:hover{
-    background-color: #111F4D;
-}
-button > a{
-    color: white;
-    font-size: 1.3rem;
-}
-button > a:hover{
-    color: white;
-}
-.search{
-    margin-top: -100px;
-}
-.cardcontent{
-    display: flex;
-}
-.rea{
-    margin-left: 18vw;
-}
+/* .card-title{
+    height: 100vh;
+} */

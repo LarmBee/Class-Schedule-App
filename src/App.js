@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home.jsx"
 import Student from './components/Student/Student';
+import Admin from './components/Admin/Dashboard';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
     <Routes>
       <Route path="/home" element={<Home />}/>
       <Route path="/student" element={<Student />}/>
+      <Route path="/admin" element={<Admin />}/>
+
     </Routes>
   </Router>
   </div>
