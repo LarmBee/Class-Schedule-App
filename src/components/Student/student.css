@@ -1,63 +1,7 @@
-.card{
-    width: 60vw;
-    text-align: center;
-    margin-top: 2vh;
-    border: solid 2px;
-    border-radius: 10px;
+.Cont{
+    background-color: #72FFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
-.cards{
-    /* width: 60vw; */
-    margin-left: 280px;
-    margin-top: -60px;
-    /* background-color: greenyellow; */
-    position: absolute;
-    top: 35vh;
-    margin-left: 22vw;
-}
-.search{
-    margin-left: 22vw;
-    margin-top: 8vh;
-    min-width: 60vw;
-    height: 3vh;
-    width: 30vw;
-    /* background-color: yellow; */
-    position: absolute;
-}
-.rea{
-  display: flex;
-}
-.stu{
-    display: flex;
-    margin-right: 10px;
-    /* background-color: brown; */
 
-}
-.contai{
-    margin-left: 22vw;
-    /* margin-top: 5vh; */
-}
-.head{
-    display: flex;
-}
-.head > .user{
-    margin-right: 10vw;
-    justify-items: end;
-    /* background-color: blue; */
-}
-.cont{
-    margin-top: 60px;
-}
-.sidebar{
-    margin-top: -20px;
-    /* background-color: red; */
-    position: absolute;
-    top: 17vh;
-    height: 100vh;
-    margin-left: 2vw;
-    border: solid 2px;
-    border-radius: 10px;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
