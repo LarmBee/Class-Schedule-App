@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" variant="dark">
+    <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

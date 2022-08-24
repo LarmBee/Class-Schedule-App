@@ -5,10 +5,12 @@ import "./student.css"
 // import Photo from "../../images/Miss.jpeg"
 import Like from "../../images/Like.png"
 import Comment from "../../images/Comment.png"
+import User from "../User/User.js"
 
 function Student() {
   return (
     <div className="Cont">
+    <User/>
       <div className="container">
       {/* <div className="row">
           <div className="row">

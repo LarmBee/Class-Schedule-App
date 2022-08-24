@@ -1,27 +1,25 @@
-/* import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Link } from "react-router-dom";
-import "./Navbar.css";
+/* import React from 'react'
+import Photo from "../../images/Miss.jpeg"
 
-function NavBar() {
+function User() {
   return (
-      <Navbar className='navba' collapseOnSelect expand="lg" variant="dark">
-      <Container>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <div className="links">
-          <Nav className="me-auto text-center">
-            <Nav.Link className="link" as = {Link} to = {"/home"}>Home</Nav.Link>
-            <Nav.Link className="link" as = {Link} to = {"/student"}>Student</Nav.Link>
-            <Nav.Link className="link" as = {Link} to = {"/admin"}>Admin</Nav.Link>
-          </Nav>
-          </div>
-        </Navbar.Collapse>
-      </Container>
-      </Navbar>
+    <div>
+        <div className="row">
+            <div className="col-md-4">
+            <h1>
+                Hello <span>User</span>
+              </h1>
+            </div> 
+            <div className="avatar col-md-2">
+                <img src={Photo} alt="Photo" style={{ height: "12vh", borderRadius: "50%" }}/>
+                <a>Edit</a>
+              </div> 
+        </div>
+    </div>
   )
 }
 
-export default NavBar */
+export default User */
+h1{
+    color: whitesmoke;
+}
