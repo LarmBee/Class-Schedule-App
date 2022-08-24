@@ -4,8 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 
 function NavBar() {
   return (
@@ -17,7 +15,7 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link className="link" as = {Link} to = {"/home"}>Home</Nav.Link>
             <Nav.Link className="link" as = {Link} to = {"/student"}>Student</Nav.Link>
-            <Nav.Link className="link" as = {Link} to = {"/admin"}>Admin</Nav.Link>m
+            <Nav.Link className="link" as = {Link} to = {"/admin"}>Admin</Nav.Link>
           </Nav>
           </div>
         </Navbar.Collapse>

@@ -1,22 +1,21 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import "./student.css"
-import Photo from "../../images/Miss.jpeg"
+import "./student.css";
+import Photo from "../../images/Miss.jpeg";
 
 function Admin() {
   return (
     <div className="Cont">
       <div className="container">
-      <div className="row">
-      
+        <div className="row">
           <div className="row">
             <div className="user d-flex">
-            <div className="col-md-10">
-            <h1>
-                Hello <span>User</span>
-              </h1>
-            </div>
+              <div className="col-md-10">
+                <h1>
+                  Hello <span>User</span>
+                </h1>
+              </div>
               <div className="avatar col-md-2">
                 <img
                   src={Photo}
@@ -27,17 +26,16 @@ function Admin() {
               </div>
             </div>
           </div>
-        
+        </div>
       </div>
-      </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4 col-sm-12">
-              <div className="card" style={{ height: "100vh" }}>
-                <h1>Announcements</h1>
-              </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4 col-sm-12">
+            <div className="card" style={{ height: "100vh" }}>
+              <h1>Announcements</h1>
             </div>
-            <div className="col-md-8">
+          </div>
+          <div className="col-md-8">
             <div className="row search my-2">
               <Form className=" search d-flex">
                 <Form.Control
@@ -81,10 +79,9 @@ function Admin() {
                 <p>5, March 2022</p>
               </div>
             </div>
-            </div>
-            
           </div>
         </div>
+      </div>
     </div>
   );
 }

@@ -8,8 +8,7 @@ function Student() {
   return (
     <div className="Cont">
       <div className="container">
-      <div className="row">
-      
+      {/* <div className="row">
           <div className="row">
             <div className="user d-flex">
             <div className="col-md-10">
@@ -28,7 +27,7 @@ function Student() {
             </div>
           </div>
         
-      </div>
+      </div> */}
       </div>
         <div className="container">
           <div className="row">
