@@ -1,4 +1,33 @@
+*{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
+.typed-intro{
+    position: absolute;
+    top: 42vh;
+    margin-left: 10%;
+}
 
+.main-text{
+    position: absolute;
+    top: 49vh;
+    margin-left: 10%;
+}
 
+.btn{
+    width: 13%;
+    position: absolute;
+    top: 63vh;
+    margin-left: 10%;
+}
+.design-intro{
+    background-color: #e8ecfa;
+    width: 50vw;
+    height: 120vh;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
 
+.main-img{
+    width: 50vw;
+    height: 20vh;
+}
