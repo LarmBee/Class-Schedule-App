@@ -6,6 +6,7 @@ import mainimg from "../../components/images/Events-cuate.png";
 import { Link } from "react-router-dom";
 
 function Landing() {
+<<<<<<< HEAD
 	return (
 		<>
 			<Card className="typed " style={{ height: "100%", width: "100%" }}>
@@ -32,6 +33,21 @@ function Landing() {
 			</Card>
 		</>
 	);
+=======
+  return (
+    <>
+      <div className="land mx-auto">
+      <Card className="typed text-center mx-auto" style={{ height: "70vh", width: "40vw" }}>
+        <Typed strings={["Ratiba"]} typeSpeed={150} backSpeed={150} loop />
+        <h4 style={{ margin: "15px" }}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+          consequatur.
+        </h4>
+      </Card>
+      </div>
+    </>
+  );
+>>>>>>> ed6dc5b (Feature edit)
 }
 
 export default Landing;
