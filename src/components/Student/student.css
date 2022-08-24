@@ -1,25 +1,7 @@
-.Container{
-    background-color: #6FEDD6;
+.Cont{
+    background-color: #72FFFF;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-}
-.Cards{
-    display: flex;
-}
-.user > a{
-    text-decoration: none;
-    color: black;
-}
-.cards{
-    margin-right: 3vw;
-}
-.news{
-    margin-left: 25vw;
-    margin-top: -37vw;
-}
-.search{
-    width: 40vw;
-    /* margin-top: -40vh; */
 }
 
