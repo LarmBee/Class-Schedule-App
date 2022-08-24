@@ -50,7 +50,7 @@ function Student() {
                 <Button variant="outline-success">Search</Button>
               </Form>
             </div>
-            <div className="row p-5 ">
+            <div className="row p-3">
               <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
