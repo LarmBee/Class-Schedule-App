@@ -2,7 +2,9 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./student.css"
-import Photo from "../../images/Miss.jpeg"
+// import Photo from "../../images/Miss.jpeg"
+import Like from "../../images/Like.png"
+import Comment from "../../images/Comment.png"
 
 function Student() {
   return (
@@ -53,31 +55,57 @@ function Student() {
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
+                <div className="reaction">
+                  <img src={Like} alt="like" />
+                  <img src={Comment} alt="Comment" />
+                </div>
+              </div>
+              <div className="card col-md-3 col-sm-12 m-2 ">
+                <div className="info">
+                <h2>Title</h2>
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>5, March 2022</p>
+                </div>
+                <div className="reaction">
+                  <img src={Like} alt="like" />
+                  <img src={Comment} alt="Comment" />
+                </div>
               </div>
               <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
+                <div className="reaction">
+                  <img src={Like} alt="like" />
+                  <img src={Comment} alt="Comment" />
+                </div>
               </div>
               <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
+                <div className="reaction">
+                  <img src={Like} alt="like" />
+                  <img src={Comment} alt="Comment" />
+                </div>
               </div>
               <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
+                <div className="reaction">
+                  <img src={Like} alt="like" />
+                  <img src={Comment} alt="Comment" />
+                </div>
               </div>
               <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
-              </div>
-              <div className="card col-md-3 col-sm-12 m-2">
-                <h2>Title</h2>
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>5, March 2022</p>
+                <div className="reaction">
+                  <img src={Like} alt="like" />
+                  <img src={Comment} alt="Comment" />
+                </div>
               </div>
             </div>
             </div>
