@@ -2,23 +2,74 @@ import React from "react";
 // import Button from "react-bootstrap/Button";
 // import Form from "react-bootstrap/Form";
 import "./student.css";
-// import Photo from "../../images/Miss.jpeg"
-// import Like from "../../images/Like.png";
-// import Comment from "../../images/Comment.png";
-import User from "../User/User.js";
-import Display from "./Display"
-import Search from "./Search"
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import { nanoid } from "nanoid";
+import NotesList from "./NoteList";
+import Search from "./Search";
+import Header from "./Header";
+import User from "../User/User.js"
+import "./student.css"
 
 function Student() {
-  const [searchText, setSearchText] = useState("");
+  const [notes, setNotes] = useState([
+		{
+			id: nanoid(),
+			text: "This is my first note!",
+			date: "15/04/2021",
+		},
+		{
+			id: nanoid(),
+			text: "This is my second note!",
+			date: "21/04/2021",
+		},
+		{
+			id: nanoid(),
+			text: "This is my third note!",
+			date: "28/04/2021",
+		},
+		{
+			id: nanoid(),
+			text: "This is my new note!",
+			date: "30/04/2021",
+		},
+	]);
+
+	const [searchText, setSearchText] = useState("");
+
+	const [darkMode, setDarkMode] = useState(false);
+
+	useEffect(() => {
+		const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
+		if (savedNotes) {
+			setNotes(savedNotes);
+		}
+	},[]);
+
+	useEffect(() => {
+		localStorage.setItem("react-notes-app-data", JSON.stringify(notes));
+	}, [notes]);
+
+	const addNote = (text) => {
+		const date = new Date();
+		const newNote = {
+			id: nanoid(),
+			text: text,
+			date: date.toLocaleDateString(),
+		};
+		const newNotes = [...notes, newNote];
+		setNotes(newNotes);
+	};
+
+	const deleteNote = (id) => {
+		const newNotes = notes.filter((note) => note.id !== id);
+		setNotes(newNotes);
+	};
 
 	// const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="Cont">
       <User />
-      {/* <Search handleSearchNote={setSearchText} /> */}
-      <div className="container"></div>
+      <Search handleSearchNote={setSearchText} />
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-sm-12">
@@ -26,68 +77,25 @@ function Student() {
               <h1>Announcements</h1>
             </div>
           </div>
-          <div className="col-md-8">
+          <div className="col-md-8 col-sm-12">
             <div className="row search my-2">
-              <Display/>
+            <div className="studentcards">
+        {/* <User/> */}
+            <div className={`${darkMode && "dark-mode"}`}>
+			<div className="container">
+				<Header handleToggleDarkMode={setDarkMode} />
+				{/* <Search handleSearchNote={setSearchText} /> */}
+				<NotesList
+					notes={notes.filter((note) =>
+						note.text.toLowerCase().includes(searchText)
+					)}
+					handleAddNote={addNote}
+					handleDeleteNote={deleteNote}
+				/>
+			</div>
+		</div>
+        </div>
             </div>
-            {/* <div className="row p-3">
-              <div className="card col-md-3 col-sm-12 m-2">
-                <h2>Title</h2>
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>5, March 2022</p>
-                <div className="reaction">
-                  <img src={Like} alt="like" />
-                  <img src={Comment} alt="Comment" />
-                </div>
-              </div>
-              <div className="card col-md-3 col-sm-12 m-2">
-                <div className="info">
-                  <h2>Title</h2>
-                  <h4>Lorem ipsum dolor sit amet.</h4>
-                  <p>5, March 2022</p>
-                </div>
-                <div className="reaction">
-                  <img src={Like} alt="like" />
-                  <img src={Comment} alt="Comment" />
-                </div>
-              </div>
-              <div className="card col-md-3 col-sm-12 m-2">
-                <h2>Title</h2>
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>5, March 2022</p>
-                <div className="reaction">
-                  <img src={Like} alt="like" />
-                  <img src={Comment} alt="Comment" />
-                </div>
-              </div>
-              <div className="card col-md-3 col-sm-12 m-2">
-                <h2>Title</h2>
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>5, March 2022</p>
-                <div className="reaction">
-                  <img src={Like} alt="like" />
-                  <img src={Comment} alt="Comment" />
-                </div>
-              </div>
-              <div className="card col-md-3 col-sm-12 m-2">
-                <h2>Title</h2>
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>5, March 2022</p>
-                <div className="reaction">
-                  <img src={Like} alt="like" />
-                  <img src={Comment} alt="Comment" />
-                </div>
-              </div>
-              <div className="card col-md-3 col-sm-12 m-2">
-                <h2>Title</h2>
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>5, March 2022</p>
-                <div className="reaction">
-                  <img src={Like} alt="like" />
-                  <img src={Comment} alt="Comment" />
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

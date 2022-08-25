@@ -15,11 +15,11 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
+/*   
  .studentcards{
     background-color: #FFC727;
     height: 100vh;
- } 
+ }  */
 .note{
     background-color:#FFC727;
     border-radius: 10px;
@@ -37,7 +37,7 @@ code {
     justify-content: space-between;
   }
   
-  .container{
+  .Container{
     background-color: white;
     margin-right: auto;
     margin-left: auto;

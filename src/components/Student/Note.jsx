@@ -4,7 +4,9 @@ import Comment from "../../images/Comment.png";
 
 const Note = ({ id, text, date, handleDeleteNote }) => {
 	return (
-		<div className='note'>
+		<div className="row">
+			<div className="col-md-8">
+			<div className='note col-sm-12'>
 			<span>{text}</span>
 			<div className='note-footer'>
 				<small>{date}</small>
@@ -18,6 +20,8 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
                   <img src={Like} alt="like" />
                   <img src={Comment} alt="Comment" />
                 </div>
+		</div>
+			</div>
 		</div>
 	);
 };
