@@ -11,7 +11,7 @@
 .main-text{
     position: absolute;
     top: 49vh;
-    margin-left: 10%;
+    margin-left:4em;
 }
 
 .btn{
@@ -23,11 +23,41 @@
 .design-intro{
     background-color: #e8ecfa;
     width: 50vw;
-    height: 120vh;
+    height: 90vh;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    rotate: 60deg;
 }
 
 .main-img{
     /* width: 50vw;
     height: 20vh; */
+    position: absolute;
+    top: 3vh;
+    left: 52vw;
+    height: 100%;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.typed{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.heading-main{
+    position: absolute;
+    top: 1%;
+    margin-left: 1em;
+    z-index: 10;
 }

@@ -2,14 +2,16 @@ import React from "react";
 import Typed from "react-typed";
 import Card from "react-bootstrap/Card";
 import "../Landing/Landing.css";
-import mainimg from "../../images/Events-cuate.png"
+import mainimg from "../../images/Events-cuate.png";
+import { Link } from "react-router-dom";
 
 function Landing() {
 	return (
 		<>
 			<Card className="typed " style={{ height: "100%", width: "100%" }}>
-      <div className="design-intro"></div>
-      <img className="main-img"src={mainimg}/>
+				<h1 className="heading-main">RATIBA</h1>
+				<div className="design-intro"></div>
+				<img className="main-img" src={mainimg} />
 				<h1 className="typed-intro" style={{ fontSize: "32px" }}>
 					Ratiba was built for :
 					<Typed
@@ -21,9 +23,12 @@ function Landing() {
 					/>
 				</h1>
 				<h4 className="main-text">
-					Start working with  <b>Ratiba.</b> and have all your class schedules in a single application
+					Start working with <b>Ratiba.</b>
+					<br /> manage your class schedules in a single application
 				</h4>
-				<button className="btn btn-primary">Get Started</button>
+				<Link to="/login" className="btn btn-primary">Get Started</Link>
+				
+
 			</Card>
 		</>
 	);
