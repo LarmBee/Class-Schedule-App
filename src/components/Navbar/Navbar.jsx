@@ -22,6 +22,9 @@ function NavBar() {
             <Nav.Link className="link" as={Link} to={"/admin"}>
               Admin
             </Nav.Link>
+            <Nav.Link className="link" as={Link} to={"/display"}>
+              Display
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
