@@ -1,4 +1,6 @@
 import { MdDeleteForever } from 'react-icons/md';
+import Like from "../../images/Like.png";
+import Comment from "../../images/Comment.png";
 
 const Note = ({ id, text, date, handleDeleteNote }) => {
 	return (
@@ -12,6 +14,10 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
 					size='1.3em'
 				/>
 			</div>
+			<div className="reaction">
+                  <img src={Like} alt="like" />
+                  <img src={Comment} alt="Comment" />
+                </div>
 		</div>
 	);
 };
