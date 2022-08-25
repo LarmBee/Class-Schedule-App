@@ -2,7 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import Card from "react-bootstrap/Card";
 import "../Landing/Landing.css";
-import mainimg from "../../images/schedule-main.jpg"
+import mainimg from "../../images/Events-cuate.png"
 
 function Landing() {
 	return (
