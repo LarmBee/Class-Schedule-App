@@ -7,7 +7,7 @@ const NotesList = ({
 	handleDeleteNote,
 }) => {
 	return (
-		<div className='notes-list'>
+		<div className='notes-list col-sm-12'>
 			{notes.map((note) => (
 				<Note
 					id={note.id}

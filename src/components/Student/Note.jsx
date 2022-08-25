@@ -5,7 +5,7 @@ import Comment from "../../images/Comment.png";
 const Note = ({ id, text, date, handleDeleteNote }) => {
 	return (
 		<div className="row">
-			<div className="col-md-8">
+			<div className="col-md-8 col-sm-12">
 			<div className='note col-sm-12'>
 			<span>{text}</span>
 			<div className='note-footer'>

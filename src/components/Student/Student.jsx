@@ -73,7 +73,7 @@ function Student() {
       <div className="container">
         <div className="row">
           <div className="col-md-4 col-sm-12">
-            <div className="card" style={{ height: "100vh" }}>
+            <div className="card" style={{ height: "100vh" , width: "23vw"}}>
               <h1>Announcements</h1>
             </div>
           </div>
