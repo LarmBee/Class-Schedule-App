@@ -17,7 +17,7 @@ function Student() {
   return (
     <div className="Cont">
       <User />
-      <Search handleSearchNote={setSearchText} />
+      {/* <Search handleSearchNote={setSearchText} /> */}
       <div className="container"></div>
       <div className="container">
         <div className="row">

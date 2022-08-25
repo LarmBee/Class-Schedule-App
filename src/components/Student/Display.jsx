@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 import NotesList from "./NoteList";
-// import Search from "./Search";
+import Search from "./Search";
 import Header from "./Header";
 import User from "../User/User.js"
 import "./student.css"
@@ -67,8 +67,8 @@ const StudentDisplay = () => {
         {/* <User/> */}
             <div className={`${darkMode && "dark-mode"}`}>
 			<div className="container">
-				{/* <Header handleToggleDarkMode={setDarkMode} /> */}
-				{/* <Search handleSearchNote={setSearchText} /> */}
+				<Header handleToggleDarkMode={setDarkMode} />
+				<Search handleSearchNote={setSearchText} />
 				<NotesList
 					notes={notes.filter((note) =>
 						note.text.toLowerCase().includes(searchText)
