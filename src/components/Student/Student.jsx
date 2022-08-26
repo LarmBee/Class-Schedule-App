@@ -2,7 +2,6 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "./student.css"
-import Photo from "../../images/Miss.jpeg"
 
 function Student() {
   return (
@@ -32,7 +31,7 @@ function Student() {
         <div className="container">
           <div className="row">
             <div className="col-md-4 col-sm-12">
-              <div className="card" style={{ height: "100vh" }}>
+              <div className="card-announce">
                 <h1>Announcements</h1>
               </div>
             </div>
@@ -50,8 +49,8 @@ function Student() {
             </div>
             <div className="row p-5 ">
               <div className="card col-md-3 col-sm-12 m-2">
-                <h2>Title</h2>
-                <h4>Lorem ipsum dolor sit amet.</h4>
+                <h2>Stand Up</h2>
+                <h4>Friday Feedback Session</h4>
                 <p>5, March 2022</p>
               </div>
               <div className="card col-md-3 col-sm-12 m-2">

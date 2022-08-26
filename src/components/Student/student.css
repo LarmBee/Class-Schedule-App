@@ -1,7 +1,20 @@
 .Cont{
-    background-color: #72FFFF;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
 
+.card-announce{
+    position: absolute;
+    top: 19vh;
+    height: 70vh;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.row{
+    left: 22vw;
+    flex-direction: row;
+}
+.card{
+    width: 16vw;
+}
