@@ -95,6 +95,11 @@ code {
     background-color: #ededed;
   
   }
+  .card_item{
+    background-color: #FFC727;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
   
   .search input:focus{
     outline: none;

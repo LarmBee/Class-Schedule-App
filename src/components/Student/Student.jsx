@@ -9,6 +9,7 @@ import Search from "./Search";
 import Header from "./Header";
 import User from "../User/User.js"
 import "./student.css"
+import Announcements from "../Student/Announcements"
 
 function Student() {
   const [notes, setNotes] = useState([
@@ -69,12 +70,15 @@ function Student() {
   return (
     <div className="Cont">
       <User />
-      <Search handleSearchNote={setSearchText} />
       <div className="container">
         <div className="row">
+		<Search handleSearchNote={setSearchText} />
           <div className="col-md-4 col-sm-12">
-            <div className="card" style={{ height: "100vh" , width: "23vw"}}>
+            <div className="card" style={{ height: "100%" , width: "23vw"}}>
               <h1>Announcements</h1>
+			  <div className="annou">
+				<Announcements/>
+			  </div>
             </div>
           </div>
           <div className="col-md-8 col-sm-12">
