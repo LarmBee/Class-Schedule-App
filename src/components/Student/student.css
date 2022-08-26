@@ -87,6 +87,9 @@ code {
     padding: 5px;
     margin-bottom: 1.5em;
   }
+  input{
+    width: 60vw;
+  }
   .search input{
     border: none;
     background-color: #ededed;

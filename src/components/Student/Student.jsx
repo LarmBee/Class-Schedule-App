@@ -80,11 +80,8 @@ function Student() {
           <div className="col-md-8 col-sm-12">
             <div className="row search my-2">
             <div className="studentcards">
-        {/* <User/> */}
             <div className={`${darkMode && "dark-mode"}`}>
-			<div className="container">
 				<Header handleToggleDarkMode={setDarkMode} />
-				{/* <Search handleSearchNote={setSearchText} /> */}
 				<NotesList
 					notes={notes.filter((note) =>
 						note.text.toLowerCase().includes(searchText)
@@ -94,7 +91,6 @@ function Student() {
 				/>
 			</div>
 		</div>
-        </div>
             </div>
           </div>
         </div>
