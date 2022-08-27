@@ -1,20 +1,40 @@
-.Cont{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+.main-container{
+    height: 100vh;
+    width: 100%;
 }
 
-.card-announce{
-    position: absolute;
-    top: 19vh;
-    height: 70vh;
-    border: 2px solid;
+.cards-container{
+    background-color: red;
+    float: right;
+    width: 75vw;
+    height: max-content;
+}
+
+.schedules{
+background-color: yellow;
+width: 71vh;
+height: 40vh;
+float: left;
+margin: 1em;
+border-radius: 10px;
+
+}
+.schedule-card{
+    width: 30vw;
     border-radius: 10px;
+    margin-left: 2em;
+    margin-right: 2em;
+    
 }
-.row{
-    left: 22vw;
-    flex-direction: row;
+.announcement-container{
+    background-color: coral;
+    
 }
-.card{
-    width: 16vw;
+.announcement{
+    background-color: aqua;
+    height: 100%;
+    width: 23vw;
+    border-radius: 10px;
+    
+    
 }
