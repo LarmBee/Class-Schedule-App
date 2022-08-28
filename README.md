@@ -25,8 +25,7 @@ npm start
 ```
 
 ##Backend Link
--
-
+-https://github.com/kenyansa/Class-Schedule-App-Backend.git
 
 
 ## Contributing
