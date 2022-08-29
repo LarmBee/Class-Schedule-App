@@ -43,7 +43,7 @@ function Student() {
 								<p>Description:{note.description}</p>
 								<p>Link :<a href={note.meeting_link}>{note.meeting_link}</a></p>
 								<p>Date: {note.date}</p>
-								<button className="btn-primary">Add Comment</button>
+								<button className="btn-schedules">Add Comment</button>
 							</div>
 						</div>
 					);
