@@ -11,7 +11,7 @@ function Landing() {
 			<Card className="typed " style={{ height: "100%", width: "100%" }}>
 				<h1 className="heading-main">RATIBA</h1>
 				<div className="design-intro"></div>
-				<img className="main-img" src={mainimg} />
+				<img className="main-img" src={mainimg} alt="calendar-image"/>
 				<h1 className="typed-intro" style={{ fontSize: "32px" }}>
 					Ratiba was built for :
 					<Typed
