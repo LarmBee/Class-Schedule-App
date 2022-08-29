@@ -12,7 +12,7 @@ function User() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <h1 style={{color: 'white', fontSize:"2rem"}}>Ratiba</h1>
+            <h1 style={{color: 'white', fontSize:"2rem"}}>Ratiba</h1> 
           </Nav>
           <Nav>
           <div className="use">

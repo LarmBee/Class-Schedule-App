@@ -24,6 +24,7 @@ function Student() {
 		setNotes(data);
 		console.log(data);
 	};
+	
 
 	useEffect(() => {
 		getNotes();
@@ -35,15 +36,19 @@ function Student() {
 			<div className="cards-container">
 			<User/>
 			<h1><u>Schedules</u></h1>
+			<h1 style={{fontSize:"2rem"}}>Schedules</h1>
 				{notes.map((note) => {
 					return (
 						<div className="schedules">
 							<div className="schedule-card">
-								<p>Title : {note.title}</p>
-								<p>Description:{note.description}</p>
-								<p>Link :<a href={note.meeting_link}>{note.meeting_link}</a></p>
-								<p>Date: {note.date}</p>
-								<button className="btn-schedules">Add Comment</button>
+
+							<h1 style={{color: 'white', fontSize:"2rem"}}>Title</h1>
+								<h2 style={{fontSize:"1rem"}}>{note.title}</h2>
+								<h1 style={{color: 'white',fontSize:"2rem"}}>Description</h1>
+								<h4 style={{fontSize:"1rem"}}>{note.description}</h4>
+								<h1 style={{color: 'white',fontSize:"2rem"}}>Meeting link</h1>
+								<a href={note.meeting_link}>{note.meeting_link}</a>
+								<p>{note.date}</p>
 							</div>
 						</div>
 					);
@@ -53,13 +58,18 @@ function Student() {
 
       {/* Announcements-card */}
       <div className="announcement-container">
-	  <h1><u>Announcements</u></h1>
+
+	  <h1 >Announcements</h1>
 				{announcements.map((announcement) => {
 					return (
 						<div className="announcement">
 							<div className="announcement-card">
 								<p>Title: <b>{announcement.title}</b></p>
 								<p>Description:{announcement.description}</p>
+							<h1 style={{color: 'white'}}>Title</h1>
+								<h2 style={{fontSize:"1rem"}}>{announcement.title}</h2>
+								<h1 style={{color: 'white', fontSize:"1rem"}}>Description</h1>
+								<h4 style={{fontSize:"1rem"}}>{announcement.description}</h4>
 							</div>
 						</div>
 					);
