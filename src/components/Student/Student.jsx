@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./student.css";
+import User from "../Student/User/User.js"
+import Nav from "../Student/Nav.js"
 
 function Student() {
 	const [notes, setNotes] = useState([]);
@@ -27,9 +29,11 @@ function Student() {
 	}, []);
 	return (
 		<div className="main-container">
-
+			<Nav/>
+			<User/>
     {/* card of individual events */}
 			<div className="cards-container">
+			<h1>Schedules</h1>
 				{notes.map((note) => {
 					return (
 						<div className="schedules">
@@ -47,6 +51,7 @@ function Student() {
 
       {/* Announcements-card */}
       <div className="announcement-container">
+	  <h1>Announcements</h1>
 				{announcements.map((announcement) => {
 					return (
 						<div className="announcement">
