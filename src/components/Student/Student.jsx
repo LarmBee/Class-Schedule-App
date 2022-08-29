@@ -78,6 +78,114 @@ function Student() {
       {/* end-of-card */}
 		</div>
 	);
+//   return (
+//     <div className="Cont">
+//       <div className="container">
+//       {/* <div className="row">
+//           <div className="row">
+//             <div className="user d-flex">
+//             <div className="col-md-10">
+//             <h1>
+//                 Hello <span>User</span>
+//               </h1>
+//             </div>
+//               <div className="avatar col-md-2">
+//                 <img
+//                   src={Photo}
+//                   alt="Photo"
+//                   style={{ height: "12vh", borderRadius: "50%" }}
+//                 />
+//                 <a>Edit</a>
+//               </div>
+//             </div>
+//           </div>
+        
+//       </div> */}
+//       </div>
+//         <div className="container">
+//           <div className="row">
+//             <div className="col-md-4 col-sm-12">
+//               <div className="card" style={{ height: "100vh" }}>
+//                 <h1>Announcements</h1>
+//               </div>
+//             </div>
+//             <div className="col-md-8">
+//             <div className="row search my-2">
+//               <Form className=" search d-flex">
+//                 <Form.Control
+//                   type="search"
+//                   placeholder="Search"
+//                   className="me-2"
+//                   aria-label="Search"
+//                 />
+//                 <Button variant="outline-success">Search</Button>
+//               </Form>
+//             </div>
+//             <div className="row p-3">
+//               <div className="card col-md-3 col-sm-12 m-2">
+//                 <h2>Title</h2>
+//                 <h4>Lorem ipsum dolor sit amet.</h4>
+//                 <p>5, March 2022</p>
+//                 <div className="reaction">
+//                   <img src={Like} alt="like" />
+//                   <img src={Comment} alt="Comment" />
+//                 </div>
+//               </div>
+//               <div className="card col-md-3 col-sm-12 m-2 ">
+//                 <div className="info">
+//                 <h2>Title</h2>
+//                 <h4>Lorem ipsum dolor sit amet.</h4>
+//                 <p>5, March 2022</p>
+//                 </div>
+//                 <div className="reaction">
+//                   <img src={Like} alt="like" />
+//                   <img src={Comment} alt="Comment" />
+//                 </div>
+//               </div>
+//               <div className="card col-md-3 col-sm-12 m-2">
+//                 <h2>Title</h2>
+//                 <h4>Lorem ipsum dolor sit amet.</h4>
+//                 <p>5, March 2022</p>
+//                 <div className="reaction">
+//                   <img src={Like} alt="like" />
+//                   <img src={Comment} alt="Comment" />
+//                 </div>
+//               </div>
+//               <div className="card col-md-3 col-sm-12 m-2">
+//                 <h2>Title</h2>
+//                 <h4>Lorem ipsum dolor sit amet.</h4>
+//                 <p>5, March 2022</p>
+//                 <div className="reaction">
+//                   <img src={Like} alt="like" />
+//                   <img src={Comment} alt="Comment" />
+//                 </div>
+//               </div>
+//               <div className="card col-md-3 col-sm-12 m-2">
+//                 <h2>Title</h2>
+//                 <h4>Lorem ipsum dolor sit amet.</h4>
+//                 <p>5, March 2022</p>
+//                 <div className="reaction">
+//                   <img src={Like} alt="like" />
+//                   <img src={Comment} alt="Comment" />
+//                 </div>
+//               </div>
+//               <div className="card col-md-3 col-sm-12 m-2">
+//                 <h2>Title</h2>
+//                 <h4>Lorem ipsum dolor sit amet.</h4>
+//                 <p>5, March 2022</p>
+//                 <div className="reaction">
+//                   <img src={Like} alt="like" />
+//                   <img src={Comment} alt="Comment" />
+//                 </div>
+//               </div>
+//             </div>
+//             </div>
+            
+//           </div>
+//         </div>
+//     </div>
+//   );
+// >>>>>>> c447a62 (Style edit)
 }
 
 export default Student;
