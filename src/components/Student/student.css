@@ -1,40 +1,40 @@
-.main-container{
-    height: 100vh;
-    width: 100%;
+.main-container {
+	height: 100vh;
+	width: 100%;
 }
 
-.cards-container{
-    background-color: red;
-    float: right;
-    width: 75vw;
-    height: max-content;
+.cards-container {
+	float: right;
+	width: 75vw;
+	max-height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
-.schedules{
-background-color: yellow;
-width: 71vh;
-height: 40vh;
-float: left;
-margin: 1em;
-border-radius: 10px;
-
+.schedules {
+	background-color: yellow;
+	width: 71vh;
+	height: 40vh;
+	float: left;
+	margin: 1em;
+	border-radius: 10px;
 }
-.schedule-card{
-    width: 30vw;
-    border-radius: 10px;
-    margin-left: 2em;
-    margin-right: 2em;
-    
+.schedule-card {
+	width: 30vw;
+	border-radius: 10px;
+	margin-left: 2em;
+	margin-right: 2em;
 }
-.announcement-container{
-    background-color: coral;
-    
+.announcement-container {
+	max-height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
-.announcement{
-    background-color: aqua;
-    height: 100%;
-    width: 23vw;
-    border-radius: 10px;
-    
-    
+.announcement {
+	background-color: aqua;
+	height: 100%;
+	width: 23vw;
+	border-radius: 10px;
+	font-size: 20px;
+	margin-top: 1em;
 }
