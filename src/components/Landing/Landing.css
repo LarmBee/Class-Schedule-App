@@ -22,10 +22,12 @@
 }
 .design-intro{
     background-color: #e8ecfa;
-    width: 50vw;
-    height: 90vh;
+    width: 60vw;
+    height: 120vh;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     rotate: 60deg;
+    position: absolute;
+    left: 0%;
 }
 
 .main-img{

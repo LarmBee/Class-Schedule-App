@@ -1,7 +1,6 @@
 .main-container {
 	height: 100vh;
 	width: 100%;
-	background-color: burlywood;
 }
 
 .cards-container {
@@ -13,13 +12,14 @@
 }
 
 .schedules {
-	background-color: yellow;
+	background-color: #e8ecfa;
 	width: 71vh;
 	height: 40vh;
 	float: left;
 	margin: 1em;
 	border-radius: 10px;
 	color: black;
+	box-shadow: 5px 3px;
 }
 .schedule-card {
 	width: 30vw;
@@ -29,14 +29,17 @@
 }
 .announcement-container {
 	max-height: 100vh;
+	margin-top: 2em;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
 .announcement {
-	background-color: aqua;
+	background-color: #e8ecfa;
 	height: 100%;
 	width: 23vw;
 	border-radius: 10px;
 	font-size: 20px;
 	margin-top: 1em;
+	border: solid 2px;
+	
 }

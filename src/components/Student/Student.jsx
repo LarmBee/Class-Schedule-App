@@ -3,6 +3,7 @@ import "./student.css";
 import User from "../Student/User/User.js"
 import Nav from "../Student/Nav.js"
 
+
 function Student() {
 	const [notes, setNotes] = useState([]);
   const [announcements, setAnnouncements] = useState([]);
@@ -30,18 +31,19 @@ function Student() {
 	return (
 		<div className="main-container">
 			<Nav/>
-			<User/>
     {/* card of individual events */}
 			<div className="cards-container">
-			<h1>Schedules</h1>
+			<User/>
+			<h1><u>Schedules</u></h1>
 				{notes.map((note) => {
 					return (
 						<div className="schedules">
 							<div className="schedule-card">
-								<h2>{note.title}</h2>
-								<h4>{note.description}</h4>
-								<a href={note.meeting_link}>{note.meeting_link}</a>
-								<p>{note.date}</p>
+								<p>Title : {note.title}</p>
+								<p>Description:{note.description}</p>
+								<p>Link :<a href={note.meeting_link}>{note.meeting_link}</a></p>
+								<p>Date: {note.date}</p>
+								<button className="btn-primary">Add Comment</button>
 							</div>
 						</div>
 					);
@@ -51,13 +53,13 @@ function Student() {
 
       {/* Announcements-card */}
       <div className="announcement-container">
-	  <h1>Announcements</h1>
+	  <h1><u>Announcements</u></h1>
 				{announcements.map((announcement) => {
 					return (
 						<div className="announcement">
 							<div className="announcement-card">
-								<h2>{announcement.title}</h2>
-								<h4>{announcement.description}</h4>
+								<p>Title: <b>{announcement.title}</b></p>
+								<p>Description:{announcement.description}</p>
 							</div>
 						</div>
 					);
