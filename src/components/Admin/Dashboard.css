@@ -1,35 +1,33 @@
-.Cont{
-    background-color: #E8ECFA;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+.contai{
+    margin-left: 22vw;
 }
-/* .card-title{
-    height: 100vh;
-} */
-
+.user > a{
+    text-decoration: none;
+    color: black;
+}
 .buttons{
-    /* margin-bottom: 3vw; */
+    margin-left: 38vw;
+    /* justify-content: space-between; */
 }
 .btn{
-    background-color: white;
-    color: black;
-    margin-bottom: 2vw;
-    margin-top: 1vh;
-    border: none;
-    margin-right: 1vw;
-
+    background-color: #111F4D;
 }
-
 .btn:hover{
-    background-color: white;
+    background-color: #111F4D;
 }
 button > a{
-    color: black;
+    color: white;
     font-size: 1.3rem;
-    text-decoration: none;
-    
 }
 button > a:hover{
-    color: black;
+    color: white;
+}
+.search{
+    margin-top: -100px;
+}
+.cardcontent{
+    display: flex;
+}
+.rea{
+    margin-left: 18vw;
 }

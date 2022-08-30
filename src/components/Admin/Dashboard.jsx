@@ -1,20 +1,14 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
-
-import "./Dashboard.css"
-import Photo from "../../images/blackwoman.jpg"
+import "./student.css";
+import Photo from "../../images/Miss.jpeg";
 
 function Admin() {
   return (
     <div className="Cont">
-
       <div className="container">
         <div className="row">
-
-
           <div className="row">
             <div className="user d-flex">
               <div className="col-md-10">
@@ -31,23 +25,7 @@ function Admin() {
                 <a>Edit</a>
               </div>
             </div>
-
           </div>
-          <div className="row ">
-            <div className="buttons col-sm-12 ">
-              <div className="btn ">
-                <button type='submit'><a href="#formuser">Add user</a></button>
-              </div>
-              <div className="btn ">
-                <button type='submit'><a href="#formuser">Create session</a></button>
-              </div>
-              <div className="btn ">
-                <button type='submit'><a href="#formuser">Add Announcement</a></button>
-              </div>
-
-            </div>
-          </div>
-
         </div>
       </div>
       <div className="container">
@@ -70,39 +48,38 @@ function Admin() {
               </Form>
             </div>
             <div className="row p-5 ">
-              <div className="card mb-3">
+              <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
               </div>
-              <div className="card mb-3">
+              <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
               </div>
-              <div className="card mb-3">
+              <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
               </div>
-              <div className="card mb-3">
+              <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
               </div>
-              <div className="card mb-3">
+              <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
               </div>
-              <div className="card ">
+              <div className="card col-md-3 col-sm-12 m-2">
                 <h2>Title</h2>
                 <h4>Lorem ipsum dolor sit amet.</h4>
                 <p>5, March 2022</p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
