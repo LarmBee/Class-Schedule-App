@@ -1,7 +1,21 @@
+<<<<<<< HEAD
 .main-container {
 	height: 100%;
 	width: 100%;
 	background-color: palegreen;
+=======
+.Cont{
+    /* background-color: #72FFFF; */
+    background-image: url("https://images.pexels.com/photos/4210787/pexels-photo-4210787.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+.search-btn{
+    background-color: black;
+    color: white;
+>>>>>>> ae17858 (Style landing page)
 }
 
 .cards-container {
