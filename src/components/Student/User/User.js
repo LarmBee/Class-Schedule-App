@@ -22,8 +22,8 @@ function User() {
 
 	
   return (
-    <Navbar collapseOnSelect expand="lg md-sm-col-12" style={{backgroundColor: "white"}}>
-      <Container>
+    <Navbar collapseOnSelect expand="lg md-sm-col-12" style={{backgroundColor: "#e8ecfa"}}>
+      <Container className="use">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
