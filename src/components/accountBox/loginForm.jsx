@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 import { BoldLink, BoxContainer, FormContainer, Input, MutedLink, SubmitButton } from "./common";
+import { Link } from "react-router-dom";
+
 
 export function LoginForm(props) {
 

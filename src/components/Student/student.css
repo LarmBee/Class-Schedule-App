@@ -1,20 +1,70 @@
+
+.main-container {
+	height: 100%;
+	width: 100%;
+	background-color: palegreen;
+}
 .Cont{
+    /* background-color: #72FFFF; */
+    background-image: url("https://images.pexels.com/photos/4210787/pexels-photo-4210787.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    background-position: center;
+}
+.search-btn{
+    background-color: black;
+    color: white;
 }
 
-.card-announce{
-    position: absolute;
-    top: 19vh;
-    height: 70vh;
-    border: 2px solid;
-    border-radius: 10px;
+.cards-container {
+	float: right;
+	width: 75vw;
+	max-height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
-.row{
-    left: 22vw;
-    flex-direction: row;
+
+.schedules {
+	background-color: #e8ecfa;
+	width: 30vw;
+	height: 40vh;
+	background-color: yellow;
+	width: 30w;
+	height: 45vh;
+	float: left;
+	margin: 1em;
+	border-radius: 10px;
+	color: black;
+	box-shadow: 5px 3px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
 }
-.card{
-    width: 16vw;
+.schedule-card {
+	width: 30vw;
+	border-radius: 10px;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.announcement-container {
+	max-height: 100vh;
+	margin-top: 2em;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.announcement {
+	background-color: #e8ecfa;
+	height: 100%;
+	width: 23vw;
+	border-radius: 10px;
+	font-size: 20px;
+	margin-top: 1em;
+	border: solid 2px;
+	
+}
+.btn-schedules{
+	border: solid 2px;
+	width: 12vw;
+	border-radius: 10px;
 }
