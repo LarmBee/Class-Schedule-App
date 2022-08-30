@@ -6,7 +6,7 @@ import 'reactjs-popup/dist/index.css';
 
 import "./Dashboard.css"
 import Photo from "../../images/blackwoman.jpg"
-
+gi
 function Admin() {
   return (
     <div className="Cont">
