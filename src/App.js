@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home.jsx"
 import Student from './components/Student/Student';
+<<<<<<< HEAD
 import Admin from './components/Admin/Dashboard';
 import Announcement from './components/createAnnouncement/announcement';
 import AddUser from './components/Adduser/AddUser';
@@ -13,14 +14,18 @@ import Login from "./components/Login";
 import Dashboard from "./components/Admin/Dashboard";
 // import Student from "./components/Student/Student";
 import User from "./components/userForm/User";
+=======
+import { AccountBox } from './components/accountBox';
+>>>>>>> eb6b67b25de83e68f62eeeede6b3dd8461298d32
 
 function App() {
   return (
     <div className="App">
     <Router>
     {/* <NavBar/> */}
-    <Routes>
-      <Route path="/home" element={<Home />}/>
+    <Routes basename="<AccountBox/>" >
+      <Route path="/" element={<Home />}/>
+      <Route path="/login" element={<AccountBox/>}/>
       <Route path="/student" element={<Student />}/>
       <Route path="/admin" element={<Admin />}/>
       <Route path="/announcement" element={<Announcement />}/>
