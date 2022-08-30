@@ -39,7 +39,7 @@ function Student() {
 			<h1 style={{fontSize:"2rem"}}>Schedules</h1>
 				{notes.map((note) => {
 					return (
-						<div className="schedules">
+						<div className="schedules lg mg sm">
 							<div className="schedule-card">
 
 							<h1 style={{color: 'white', fontSize:"2rem"}}>Title</h1>

@@ -1,6 +1,7 @@
 .main-container {
 	height: 100%;
 	width: 100%;
+	background-color: palegreen;
 }
 
 .cards-container {
@@ -15,6 +16,9 @@
 	background-color: #e8ecfa;
 	width: 71vh;
 	height: 40vh;
+	background-color: yellow;
+	width: 30w;
+	height: 45vh;
 	float: left;
 	margin: 1em;
 	border-radius: 10px;
