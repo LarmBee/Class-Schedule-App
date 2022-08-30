@@ -11,7 +11,7 @@ function User() {
   // const [Avatar, setAvatar] = useState([]);
 
   const getStudents = async ()=>{
-    const response = await fetch("https://ratibar.herokuapp.com/schedules/1");
+    const response = await fetch("https://ratibar.herokuapp.com/students/1");
 		const data = await response.json();
 		setUsername(data);
 		console.log(data);
@@ -27,8 +27,8 @@ function User() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <h1>Hello <span>{Username.title}</span></h1>
-            <h1>{Username.email}</h1>
+            <h1>Hello <span>{Username.name}</span></h1>
+            {/* <h1>{Username.email}</h1> */}
           </Nav>
           <Nav>
           <div className="use">
