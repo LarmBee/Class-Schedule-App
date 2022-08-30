@@ -1,14 +1,19 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
 import "./Dashboard.css"
 import Photo from "../../images/blackwoman.jpg"
 
 function Admin() {
   return (
     <div className="Cont">
+      
       <div className="container">
       <div className="row">
+        
       
           <div className="row">
             <div className="user d-flex">
@@ -39,6 +44,7 @@ function Admin() {
                   <div className="btn ">
                     <button type='submit'><a href="#formuser">Add Announcement</a></button>
                   </div>
+                  
             </div>
             </div>
         
