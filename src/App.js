@@ -8,10 +8,10 @@ import Admin from './components/Admin/Dashboard';
 import Announcement from './components/createAnnouncement/announcement';
 import AddUser from './components/Adduser/AddUser';
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Dashboard from "./components/Admin/Dashboard";
-import Student from "./components/Student/Student";
+// import Student from "./components/Student/Student";
 import User from "./components/userForm/User";
 
 function App() {
