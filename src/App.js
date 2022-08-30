@@ -25,18 +25,12 @@ function App() {
       <Route path="/admin" element={<Admin />}/>
       <Route path="/announcement" element={<Announcement />}/>
       <Route path="/adduser" element={<AddUser />}/>
-
-
-
-<<<<<<< HEAD
-=======
       {/* User/Student section */}
       <Route path="/student" element={<Student/>}/>
       {/* User/Admin section */}
       <Route path="/user" element={<User/>}/>
       <Route path="/announcement" element={<Announcement/>}/>
 
->>>>>>> master
     </Routes>
   </Router>
   </div>
