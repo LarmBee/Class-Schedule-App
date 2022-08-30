@@ -1,12 +1,7 @@
 .home{
-<<<<<<< HEAD
     background-image: url("../../components/images/Events-cuate.png");
-    /* background-image: url("https://images.unsplash.com/photo-1620503374956-c942862f0372?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdhbGxwYXBlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"); */
     background-color: #72FFFF;
-=======
     background-image: url("https://images.pexels.com/photos/4210787/pexels-photo-4210787.jpeg?auto=compress&cs=tinysrgb&w=600");
-    /* background-color: #72FFFF; */
->>>>>>> ae17858 (Style landing page)
     height: 100vh;
     background-size: cover;
     position: relative;
