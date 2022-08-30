@@ -3,9 +3,10 @@ import "./student.css";
 import User from "../Student/User/User.js";
 import Nav from "../Student/Nav.js";
 // import Feedback from "react-bootstrap/esm/Feedback";
-import like from "../images/icons8-facebook-like-24.png";
+// import like from "../images/icons8-facebook-like-24.png";
 import unlike from "../images/icons8-thumbs-down-24.png";
 import comment from "../images/icons8-comments-24.png";
+import Likes from "./Likes"
 
 function Student() {
   const [notes, setNotes] = useState([]);
@@ -57,11 +58,7 @@ function Student() {
 					<p>{note.date}</p>
 					<div className="d-flex">
 					<div className="like">
-						<img src={like} alt="" />
-						<span>1</span>
-					</div>
-					<div className="unlike">
-						<img src={unlike} alt="" />
+						<Likes/>
 					</div>
 					<div className="comment">
 						<img src={comment} alt="" />

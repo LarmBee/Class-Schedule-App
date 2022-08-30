@@ -7,10 +7,6 @@ import update from '../../src/images/updated.png'
 
 
 function Login() {
-	
-
-	
-
 	return (
 		<div className="Auth-form-container">
         
