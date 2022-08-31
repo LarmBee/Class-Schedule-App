@@ -12,7 +12,6 @@ export function LoginForm(props) {
 	const [loginEmail, setLoginEmail] =useState("");
 	const [loginPassword, setLoginPassword] =useState("")
     const {switchToSignUp} = useContext(AccountContext);
-
     const[formValues, setFormValues] = React.useState({
 		email: '',
 		password: ''

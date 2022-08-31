@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 // import "./User.css"
 
 function User() {
+  
   return (
     <Navbar collapseOnSelect expand="lg md-sm-col-12" style={{backgroundColor: "black"}}>
       <Container >
@@ -16,7 +17,8 @@ function User() {
           </Nav>
           <Nav>
           <div className="use">
-          <h1 style={{color: 'white', fontSize:"1rem"}}>Log Out</h1>
+          {/* <h1 style={{color: 'white', fontSize:"1rem"}}>Log Out</h1> */}
+          <button>Log out</button>
           </div>
           </Nav>
         </Navbar.Collapse>
