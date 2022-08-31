@@ -5,7 +5,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 import "./Dashboard.css"
-import Photo from "../../images/blackwoman.jpg"
+import Photo from "../images/blackwoman.jpg"
 
 function Admin() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../src/App.css";
-import schedule from '../../src/images/schedule.png'
-import announcement from '../../src/images/loudspeaker.png'
-import update from '../../src/images/updated.png'
+import schedule from '../components/images/schedule.png'
+import announcement from './images/loudspeaker.png'
+import update from './images/updated.png'
 
 
 function Login() {
