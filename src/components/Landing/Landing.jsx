@@ -1,9 +1,9 @@
 import React from "react";
 import Typed from "react-typed";
 import Card from "react-bootstrap/Card";
-import "../Landing/Landing.css";
 import mainimg from "../../components/images/Events-cuate.png";
 import { Link } from "react-router-dom";
+import "./Landing.css"
 
 function Landing() {
 	return (

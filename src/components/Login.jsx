@@ -11,7 +11,7 @@ function Login() {
 		<div className="Auth-form-container">
         
 		{/* Authorization form container */}
-		<form className="Auth-form">
+		<form className="Auth-form" >
 		<h1 className="logo-header">Ratiba</h1>
 			<div className="Auth-form-content">
 
@@ -23,6 +23,8 @@ function Login() {
 						className="form-control mt-1"
 						placeholder="Enter your email"
 						id="email-input"
+						name='email'
+						
 					/>
 				</div>
 
@@ -34,6 +36,8 @@ function Login() {
 						className="form-control mt-1"
 						placeholder="Password"
 						id="password-input"
+						name='password'
+						
 					/>
 				</div>
 				<br />
