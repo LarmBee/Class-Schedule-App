@@ -18,7 +18,7 @@ function User() {
           <Nav>
           <div className="use">
           {/* <h1 style={{color: 'white', fontSize:"1rem"}}>Log Out</h1> */}
-          <button>Log out</button>
+          <button className="log">Log out</button>
           </div>
           </Nav>
         </Navbar.Collapse>

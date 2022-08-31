@@ -95,6 +95,11 @@ a{
 .block{
 	display: block;
 }
+.log{
+	width: 5vw;
+	height: 2vh;
+	border-radius: 30px;
+}
 
 .none{
 	display: none;
