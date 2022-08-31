@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Comments({postId, display, setDisplay}) {
+function Comments({postId, setDisplay}) {
     const [comment, setComment] = useState('')
+    const [display, setDisplay1] = useState(false)
     const handleComment = (e) => {
         e.preventDefault()
         fetch('/post', {
