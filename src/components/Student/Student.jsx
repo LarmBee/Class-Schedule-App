@@ -71,13 +71,13 @@ function Student() {
 				<div className="schedules lg mg sm">
 
 					<div className="schedule-card">
-						<h1 style={{ color: "black", fontSize: "1rem" }}>Title:</h1>
+						<h1 style={{ color: "black", fontSize: "1rem",fontWeight:'bold' }}>Title:</h1>
 						<h2 style={{ fontSize: "1rem" }}>{note.title}</h2>
-						<h1 style={{ color: "white", fontSize: "2rem" }}>
+						<h1 style={{ color: "blck", fontSize: "1rem" }}>
 						Description
 						</h1>
 						<h4 style={{ fontSize: "1rem" }}>{note.description}</h4>
-						<h1 style={{ color: "white", fontSize: "2rem" }}>
+						<h1 style={{ color: "black", fontSize: "1rem" }}>
 						Meeting link
 						</h1>
 						<a href={note.meeting_link}>{note.meeting_link}</a>
@@ -118,9 +118,9 @@ function Student() {
 
 									<div className="announcement-card">
 									
-										<h1 style={{ color: "white" }}>Title</h1>
+										<h1 style={{ color: "black",fontWeight:'bold' }}>Title</h1>
 										<h2 style={{ fontSize: "1rem" }}>{announcement.title}</h2>
-										<h1 style={{ color: "white", fontSize: "1rem" }}>
+										<h1 style={{ color: "black", fontSize: "1rem" }}>
 											Description
 										</h1>
 										<h4 style={{ fontSize: "1rem" }}>
