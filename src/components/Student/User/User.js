@@ -11,7 +11,7 @@ function User() {
   // const [Avatar, setAvatar] = useState([]);
 
   const getStudents = async ()=>{
-    const response = await fetch("https://ratibar.herokuapp.com/students/1");
+    const response = await fetch("https://ratibar-backend.herokuapp.com/students/1");
 		const data = await response.json();
 		setUsername(data);
 		console.log(data);
@@ -33,12 +33,12 @@ function User() {
           <Nav>
           <div className="use">
           <img src={Photo} alt="Photo" style={{ height: "12vh", borderRadius: "50%"}} />
-          <NavDropdown title="Edit" id="collasible-nav-dropdown">
+          {/* <NavDropdown title="Edit" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Name</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Username </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Avatar</NavDropdown.Item>
               <NavDropdown.Divider />
-            </NavDropdown>
+            </NavDropdown> */}
           </div>
           </Nav>
         </Navbar.Collapse>

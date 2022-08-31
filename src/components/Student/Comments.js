@@ -1,19 +1,18 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Comments({postId, setDisplay}) {
+function Comments({postId, display, setDisplay}) {
     const [comment, setComment] = useState('')
-    const [display, setDisplay1] = useState(false)
     const handleComment = (e) => {
         e.preventDefault()
-        fetch('/post', {
+        fetch('https://ratibar-backend.herokuapp.com/comments', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                post_id: postId,
+                announcement_id: postId,
                 comment: comment
             })
         })
@@ -24,8 +23,9 @@ function Comments({postId, setDisplay}) {
         <form onSubmit={handleComment}>
             <input type="text" placeholder='comment' className='comment' value={comment} required onChange={e => setComment(e.target.value)}/>
             <br />
-            <input type="submit" className='custom-btn' value="comment" />
-            <input type="button" className='custom-btn' value="close" />
+            <button>Add Comment</button>
+            {/* <input type="submit" className='custom-btn' value="comment" /> */}
+            {/* <input type="button" className='custom-btn' value="close" /> */}
         </form>
     </div>
   )
