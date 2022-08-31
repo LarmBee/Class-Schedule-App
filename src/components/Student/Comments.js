@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Comments({postId, setDisplay}) {
+function Comments({postId, display, setDisplay}) {
     const [comment, setComment] = useState('')
-    const [display, setDisplay1] = useState(false)
     const handleComment = (e) => {
         e.preventDefault()
-        fetch('/post', {
+        fetch('https://ratibar-backend.herokuapp.com/comments', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

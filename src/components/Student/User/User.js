@@ -11,7 +11,7 @@ function User() {
   // const [Avatar, setAvatar] = useState([]);
 
   const getStudents = async ()=>{
-    const response = await fetch("https://ratibar.herokuapp.com/students/1");
+    const response = await fetch("https://ratibar-backend.herokuapp.com/students/1");
 		const data = await response.json();
 		setUsername(data);
 		console.log(data);
