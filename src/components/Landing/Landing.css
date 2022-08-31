@@ -27,8 +27,8 @@
 }
 .design-intro{
     background-color: #e8ecfa;
-    width: 60vw;
-    height: 120vh;
+    width: 60%;
+    height: 120%;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     rotate: 60deg;
     position: absolute;
