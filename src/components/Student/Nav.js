@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "../Student/student.css"
 // import NavDropdown from "react-bootstrap/NavDropdown";
 // import Photo from "../../images/Miss.jpeg"
 // import "./User.css"
@@ -18,7 +19,7 @@ function User() {
           <Nav>
           <div className="use">
           {/* <h1 style={{color: 'white', fontSize:"1rem"}}>Log Out</h1> */}
-          <button className="log">Log out</button>
+          <button className="log" style={{width: "2vw",borderRadius: "30px"}}>Log out</button>
           </div>
           </Nav>
         </Navbar.Collapse>

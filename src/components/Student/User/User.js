@@ -27,7 +27,7 @@ function User() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <h1>Hello <span>{Username.name}</span></h1>
+            <h1 style={{fontSize:"2rem"}}>Hello <span>{Username.name}</span></h1>
             {/* <h1>{Username.email}</h1> */}
           </Nav>
           <Nav>

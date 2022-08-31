@@ -46,11 +46,11 @@
 	margin: 2em;
 	border-radius: 10px;
 	color: black;
-	/* box-shadow: 5px 5px 5px 5px; */
+	box-shadow: 5px 5px 5px 5px;
 	overflow: hidden;
 	/* white-space: nowrap; */
 	text-align: left;
-	border: 2px solid;
+	border: 0.5px solid;
 }
 .schedule-card {
 	width: 100%;
@@ -63,13 +63,17 @@
 
 
 }
+::-webkit-scrollbar {
+	display: none;
+  }
+  
 .announcement-container {
 	max-height: 100vh;
-	width: 30vw;
+	width: 20vw;
 	margin-top: 2em;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	margin: 0 20px;
+	margin: 0 40px;
 }
 .announcement {
 	background-color: #e8ecfa;
@@ -104,12 +108,16 @@ a{
 .none{
 	display: none;
 }
+span{
+	font-weight: 800;
+}
 
 .modal-custom{
 	position: absolute;
 	z-index: 1000;
-	background-color: #f2f2f2;
-	width: 50%;
+	background-color: black;
+	color: black;
+	width: 80%;
 	margin: 0 auto;
 	height: 150px;
 	padding: 20px;
@@ -117,7 +125,12 @@ a{
 	top: 20%;
 }
 
-.modal-custom form{
+.comment-btn{
+	width: 5vw;
+	height: 2vw;
+	border-radius: 30px;
+	background-color: white;
+	color: black;
 }
 
 .modal-custom .comment{

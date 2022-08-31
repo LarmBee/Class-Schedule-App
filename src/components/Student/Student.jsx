@@ -102,46 +102,12 @@ function Student() {
 
 		<div className="announcement-container">
 						<h1 style={{color: "black", fontSize: "2rem",fontWeight:"bold"}}>Announcements</h1>
-						<div className="announcement-container">
+						<div className="announcements-container">
 						{/* <h1>Announcements</h1> */}
-					{/* {announcementToDisplay} */}
+					{announcementToDisplay}
 
 					</div>
-						{announcements.map((announcement) => {
-							return (
-								<div key={announcement.id} className="announcement">
-									<Comments
-										postId={announcement.id}
-										display={display}
-										setDisplay={setDisplay}
-									/>
-
-									<div className="announcement-card">
-									
-										<h1 style={{ color: "black", fontSize: "1rem", fontWeight:"bold" }}>Title</h1>
-										<h2 style={{ fontSize: "1rem" }}>{announcement.title}</h2>
-										<h1 style={{ color: "black", fontSize: "1rem",fontWeight:"bold"  }}>
-											Description
-										</h1>
-										<h4 style={{ fontSize: "1rem" }}>
-											{announcement.description}
-										</h4>
-									</div>
-									<div className="d-flex">
-										<div className="like">
-											<Likes like={1} />
-										</div>
-										<div className="comment">
-											<img
-												src={comment}
-												alt=""
-												onClick={() => showComments(announcement.id)}
-											/>
-										</div>
-									</div>
-								</div>
-							);
-						})}
+						
 					</div>
 		</div>
 	</div>
