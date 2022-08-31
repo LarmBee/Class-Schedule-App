@@ -25,7 +25,12 @@ function User() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+    
+    
+  );  
 }
+
+
+
 
 export default User;
