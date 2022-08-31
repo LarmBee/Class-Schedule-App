@@ -25,8 +25,8 @@ const Announcements = ({announcement})=> {
 					
 					<h4 style={{ fontSize: "1rem" }}>{announcement.description}</h4>
 				</div>
-				<div className="d-flex">
-					<div className="like">
+				<div className="d-flex" style={{justifyContent: "center",alignItems: "center"}}>
+					<div className="like" >
 						<Likes like={0}/>
 					</div>
 					<div className="comment">
