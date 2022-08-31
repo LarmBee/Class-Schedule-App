@@ -26,7 +26,7 @@ function Landing() {
 					Start working with <b>Ratiba.</b>
 					<br /> manage your class schedules in a single application
 				</h4>
-				<Link to="/login" className="btn btn-primary">Get Started </Link>
+				<Link to="/login" className="btn">Get Started </Link>
 				
 
 			</Card>

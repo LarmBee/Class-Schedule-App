@@ -23,7 +23,7 @@ export function SignUpForm(props) {
 				<Input type="password" placeholder="Confirm Password" />
 			</FormContainer>
 			<Marginer direction="vertical" margin={10} />
-			<SubmitButton type="submit">Signup</SubmitButton>
+			<SubmitButton type="submit">Sign in</SubmitButton>
 			<Marginer direction="vertical" margin="1em" />
 			<MutedLink href="#">
 				Not an Admin?
