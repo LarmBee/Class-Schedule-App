@@ -68,6 +68,7 @@
 	border-radius: 10px;
 	font-size: 20px;
 	margin-top: 1em;
+	position: relative;
 	border: solid 2px;
 	
 }
@@ -75,6 +76,33 @@
 	border: solid 2px;
 	width: 12vw;
 	border-radius: 10px;
+}
+
+.block{
+	display: block;
+}
+
+.none{
+	display: none;
+}
+
+.modal-custom{
+	position: absolute;
+	z-index: 1000;
+	background-color: #f2f2f2;
+	width: 50%;
+	margin: 0 auto;
+	height: 150px;
+	padding: 20px;
+	left: 20%;
+	top: 20%;
+}
+
+.modal-custom form{
+}
+
+.modal-custom .comment{
+	width: 100%;
 }
 
 

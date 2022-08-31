@@ -7,10 +7,14 @@ import Nav from "../Student/Nav.js";
 import unlike from "../images/icons8-thumbs-down-24.png";
 import comment from "../images/icons8-comments-24.png";
 import Likes from "./Likes"
+import Comments from "./Comments";
+
 
 function Student() {
   const [notes, setNotes] = useState([]);
   const [announcements, setAnnouncements] = useState([]);
+  const [display, setDisplay] = useState(false)
+  const [postId, setPostId] = useState('')
 
   const getAnnouncements = async () => {
     const response = await fetch("https://ratibar.herokuapp.com/announcements");
@@ -32,6 +36,12 @@ function Student() {
   useEffect(() => {
     getNotes();
   }, []);
+  
+  const showComments = (id) => {
+	setPostId(id)
+	setDisplay(!display);
+
+  }
 
   return (
     <div className="main-container">
@@ -44,6 +54,7 @@ function Student() {
 			{notes.map((note) => {
 			return (
 				<div className="schedules lg mg sm">
+
 				<div className="schedule-card">
 					<h1 style={{ color: "white", fontSize: "2rem" }}>Title</h1>
 					<h2 style={{ fontSize: "1rem" }}>{note.title}</h2>
@@ -58,10 +69,10 @@ function Student() {
 					<p>{note.date}</p>
 					<div className="d-flex">
 					<div className="like">
-						<Likes/>
+						<Likes like={1}/>
 					</div>
 					<div className="comment">
-						<img src={comment} alt="" />
+						<img src={comment} alt="" onClick={() => showComments(note.id)}/>
 					</div>
 					</div>
 				</div>
@@ -77,6 +88,8 @@ function Student() {
 			{announcements.map((announcement) => {
 			return (
 				<div className="announcement">
+				<Comments postId={announcement.id} display={display} setDisplay={setDisplay}/>
+
 				<div className="announcement-card">
 					<p>
 					Title: <b>{announcement.title}</b>
@@ -89,6 +102,14 @@ function Student() {
 					</h1>
 					<h4 style={{ fontSize: "1rem" }}>{announcement.description}</h4>
 				</div>
+				<div className="d-flex">
+					<div className="like">
+						<Likes like={1}/>
+					</div>
+					<div className="comment">
+						<img src={comment} alt="" onClick={() => showComments(announcement.id)}/>
+					</div>
+					</div>
 				</div>
 			);
 			})}
