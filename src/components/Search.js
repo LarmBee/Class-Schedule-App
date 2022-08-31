@@ -18,8 +18,10 @@ function Search() {
 
       let items = []
       notes.forEach(note => {
-        items.push(note?.title)
+        items.push({title: note?.title})
       });
+
+      console.log({notes})
       console.log(items)
       const handleOnSearch = (string, results) => {
         // onSearch will have as the first callback parameter
@@ -46,6 +48,15 @@ function Search() {
         return Object.keys(item).some(key =>item[key].toString().toLowerCase().includes(filter => filter.toString().toLowerCase()))
     })
     // console.log(2);
+
+    const formatResult = (item) => {
+        return (
+          <>
+            <span style={{ display: 'block', textAlign: 'left' }}>id: {item.id}</span>
+            <span style={{ display: 'block', textAlign: 'left' }}>name: {item.name}</span>
+          </>
+        )
+      }
   return (
     <div>
         <section className="py-2 container">
@@ -56,14 +67,17 @@ function Search() {
                         {/* <input type="text" className='form-control'
                         value = {filter}
                         onChange = {SearchSchedule} /> */}
-                        <ReactSearchAutocomplete
+                        {items.length > 0 && <ReactSearchAutocomplete
                           items={items}
                           onSearch={handleOnSearch}
                           onHover={handleOnHover}
                           onSelect={handleOnSelect}
-                          onFocus={handleOnFocus}
                           autoFocus
-                        />
+                          styling={{
+                            color: 'black'
+                          }}
+                          
+                        />}
                     </div>
                 </div>
             </div>

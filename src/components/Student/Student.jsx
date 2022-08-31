@@ -71,7 +71,7 @@ function Student() {
 				<div className="schedules lg mg sm">
 
 					<div className="schedule-card">
-						<h1 style={{ color: "white", fontSize: "2rem" }}>Title</h1>
+						<h1 style={{ color: "black", fontSize: "1rem" }}>Title:</h1>
 						<h2 style={{ fontSize: "1rem" }}>{note.title}</h2>
 						<h1 style={{ color: "white", fontSize: "2rem" }}>
 						Description
