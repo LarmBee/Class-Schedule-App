@@ -65,7 +65,7 @@ function Student() {
 
 	  
 		<div className="cards-container">
-			<h1 style={{ fontSize: "2rem" }}>Schedules</h1>
+			<h1 style={{ color: "black", fontSize: "2rem",fontWeight:"bold"}}>Schedules</h1>
 			{notes.map((note) => {
 			return (
 				<div className="schedules lg mg sm">
@@ -101,7 +101,7 @@ function Student() {
 
 
 		<div className="announcement-container">
-						<h1>Announcements</h1>
+						<h1 style={{color: "black", fontSize: "2rem",fontWeight:"bold"}}>Announcements</h1>
 						<div className="announcement-container">
 						{/* <h1>Announcements</h1> */}
 					{/* {announcementToDisplay} */}

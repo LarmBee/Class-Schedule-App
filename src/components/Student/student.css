@@ -37,11 +37,11 @@
 	width: 28vw;
 	height: 49vh;
 	background-color: #e8ecfa;
-	width: 20vw;
+	width: 25vw;
 	/* height: 60vh; */
 	background-color: #e8ecfa;
 	width: 30w;
-	height: 55vh;
+	height: 45vh;
 	float: left;
 	margin: 2em;
 	border-radius: 10px;
@@ -53,12 +53,12 @@
 	border: 2px solid;
 }
 .schedule-card {
-	width: 30%;
+	width: 100%;
 	border-radius: 10px;
 	margin-left: 1em;
 	margin-right: 2em;
 	text-align: left;
-	white-space: nowrap;
+	white-space: wrap;
 	overflow-wrap: break-word;
 
 
