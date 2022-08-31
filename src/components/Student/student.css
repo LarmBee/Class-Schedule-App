@@ -36,15 +36,21 @@
 	background-color: yellow;
 	width: 28vw;
 	height: 49vh;
+	background-color: #e8ecfa;
+	width: 20vw;
+	/* height: 60vh; */
+	background-color: #e8ecfa;
+	width: 30w;
+	height: 55vh;
 	float: left;
 	margin: 2em;
 	border-radius: 10px;
 	color: black;
-	box-shadow: 3px 2px;
-	overflow-wrap: break-word;
+	/* box-shadow: 5px 5px 5px 5px; */
 	overflow: hidden;
-
-	
+	/* white-space: nowrap; */
+	text-align: left;
+	border: 2px solid;
 }
 .schedule-card {
 	width: 30%;
@@ -75,6 +81,10 @@
 	position: relative;
 	border: solid 2px;
 	
+}
+a{
+	text-decoration: none;
+	color: red;
 }
 .btn-schedules{
 	border: solid 2px;

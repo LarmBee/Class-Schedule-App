@@ -10,7 +10,8 @@ import Likes from "./Likes";
 import Comments from "./Comments";
 
 import Announcements from "./Announcement";
-
+// import Schedules from "./Schedules";
+import Search from "../Search";
 
 function Student() {
 	const [notes, setNotes] = useState([]);
@@ -18,8 +19,11 @@ function Student() {
 	const [display, setDisplay] = useState(false);
 	const [postId, setPostId] = useState("");
 
+
   const getAnnouncements = async () => {
-    const response = await fetch("https://ratibar-backend.herokuapp.com/announcements");
+    const response = await fetch(
+      "https://ratibar-backend.herokuapp.com/announcements"
+    );
     const data = await response.json();
     setAnnouncements(data);
     console.log(data);
@@ -29,30 +33,36 @@ function Student() {
   }, []);
 
   const getNotes = async () => {
-    const response = await fetch("https://ratibar-backend.herokuapp.com/schedules");
+    const response = await fetch(
+      "https://ratibar-backend.herokuapp.com/schedules"
+    );
     const data = await response.json();
     setNotes(data);
-    console.log({data});
+    // console.log({data});
   };
 
-	useEffect(() => {
-		getNotes();
-	}, []);
 
-	const showComments = (id) => {
-		setPostId(id);
-		setDisplay(!display);
-	};
+  useEffect(() => {
+    getNotes();
+  }, []);
 
+  const showComments = (id) => {
+    setPostId(id);
+    setDisplay(!display);
+  };
 
-  const announcementToDisplay = announcements.map(announcement => (<Announcements announcement={announcement} />))
+  const announcementToDisplay = announcements.map((announcement) => (
+    <Announcements announcement={announcement} />
+  ));
 
   return (
     <div className="main-container">
       <Nav />
       <User />
+      <Search />
       {/* card of individual events */}
       <div className="card-contents">
+
 	  
 		<div className="cards-container">
 			<h1 style={{ fontSize: "2rem" }}>Schedules</h1>
@@ -136,6 +146,7 @@ function Student() {
 		</div>
 	</div>
 			
+
 
   );
 }
