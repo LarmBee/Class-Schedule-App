@@ -6,7 +6,7 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home.jsx"
 import Student from './components/Student/Student';
 import { AccountBox } from './components/accountBox';
-
+import Admin from "./components/Admin/Admin.jsx";
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/login" element={<AccountBox/>}/>
       <Route path="/student" element={<Student />}/>
+      <Route path="/admin" element={<Admin />}/>
     </Routes>
   </Router>
   </div>
