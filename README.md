@@ -1,6 +1,13 @@
 # Ratiba Class Schedule Application
 
 This is a school schedule application made using React JS and hosted on Firebase with Rails used for backend development
+##Use
+
+1.To login credentials are :
+```bash
+email:admin@test.com
+password: admin123
+```
 ## Installation
 
 1.Clone the repo
