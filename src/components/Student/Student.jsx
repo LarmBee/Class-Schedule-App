@@ -100,6 +100,7 @@ function Student() {
 			</div>
 
 
+
 		<div className="announcement-container">
 						<h1 style={{color: "black", fontSize: "2rem",fontWeight:"bold"}}>Announcements</h1>
 						<div className="announcements-container">
