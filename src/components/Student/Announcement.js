@@ -12,18 +12,7 @@ const Announcements = ({announcement})=> {
     const showComments = () => {
         setDisplay(!display)
     }
-    
-	const [CommentLists, setCommentLists] = useState([])
-
-
-    
-    const updateComment =  (newComment) => {
-        setCommentLists(CommentLists.concat(newComment))
-    }
-
 	
-
-
     return (
 				<div className="announcement">
 				<Comments postId={announcement.id} display={display} setDisplay={setDisplay}/>
