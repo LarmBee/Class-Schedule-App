@@ -50,11 +50,46 @@ function Student() {
     <Announcements announcement={announcement} />
   ));
 
+  const names = [
+    { id: 1, title: "Text" },
+    { id: 2, title: "Ugali" },
+    { id: 3, title: "boots" },
+  ];
+  const [filter, setFilter] = useState("");
+
+  // let items = []
+  // notes.forEach(note => {
+  //   items.push({title: note?.title})
+  // });
+
+  // console.log({notes})
+  // console.log(items)
+
+  const SearchSchedule = (e) => {
+    setFilter(e.target.value);
+  };
+  
+  // console.log(2);
+  // const items = []
+    
+
+  const handleOnSearch = (string, results) => {
+    // onSearch will have as the first callback parameter
+    // the string searched and for the second the results.
+    console.log(string, results);
+  };
+  const handleOnSelect = (item) => {
+    let schedulenSearch = notes?.filter((note) => 
+      note.id === item.id
+    );
+    // the item selected
+    setNotes(schedulenSearch)
+  }
   return (
     <div className="main-container">
       <Nav />
       <User />
-      <Search />
+      <Search handleOnSearch={handleOnSearch} handleOnSelect={handleOnSelect} notes={notes} />
 	  {/* <Profile/> */}
       {/* card of individual events */}
       <div className="card-contents">
@@ -99,7 +134,6 @@ function Student() {
 		<div className="announcement-container">
 						<h1 style={{color: "black", fontSize: "2rem",fontWeight:"bold"}}>Announcements</h1>
 						<div className="announcements-container">
-						{/* <h1>Announcements</h1> */}
 					{announcementToDisplay}
 
 					</div>
