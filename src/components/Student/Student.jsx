@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./student.css";
 import User from "../Student/User/User.js";
 import Nav from "../Student/Nav.js";
-// import Feedback from "react-bootstrap/esm/Feedback";
-// import like from "../images/icons8-facebook-like-24.png";
-import unlike from "../images/icons8-thumbs-down-24.png";
-import comment from "../images/icons8-comments-24.png";
-import Likes from "./Likes";
-import Comments from "./Comments";
+import Profile from "../Student/Profile" 
 
 import Announcements from "./Announcement";
 // import Schedules from "./Schedules";
@@ -60,6 +55,7 @@ function Student() {
       <Nav />
       <User />
       <Search />
+	  {/* <Profile/> */}
       {/* card of individual events */}
       <div className="card-contents">
 
