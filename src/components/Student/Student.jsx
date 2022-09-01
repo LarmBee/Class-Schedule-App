@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./student.css";
 import User from "../Student/User/User.js";
 import Nav from "../Student/Nav.js";
-// import Feedback from "react-bootstrap/esm/Feedback";
-// import like from "../images/icons8-facebook-like-24.png";
-import unlike from "../images/icons8-thumbs-down-24.png";
-import comment from "../images/icons8-comments-24.png";
-import Likes from "./Likes";
-import Comments from "./Comments";
+import Profile from "../Student/Profile" 
 
 import Announcements from "./Announcement";
 // import Schedules from "./Schedules";
@@ -60,6 +55,7 @@ function Student() {
       <Nav />
       <User />
       <Search />
+	  {/* <Profile/> */}
       {/* card of individual events */}
       <div className="card-contents">
 
@@ -102,46 +98,12 @@ function Student() {
 
 		<div className="announcement-container">
 						<h1 style={{color: "black", fontSize: "2rem",fontWeight:"bold"}}>Announcements</h1>
-						<div className="announcement-container">
+						<div className="announcements-container">
 						{/* <h1>Announcements</h1> */}
-					{/* {announcementToDisplay} */}
+					{announcementToDisplay}
 
 					</div>
-						{announcements.map((announcement) => {
-							return (
-								<div key={announcement.id} className="announcement">
-									<Comments
-										postId={announcement.id}
-										display={display}
-										setDisplay={setDisplay}
-									/>
-
-									<div className="announcement-card">
-									
-										<h1 style={{ color: "black", fontSize: "1rem", fontWeight:"bold" }}>Title</h1>
-										<h2 style={{ fontSize: "1rem" }}>{announcement.title}</h2>
-										<h1 style={{ color: "black", fontSize: "1rem",fontWeight:"bold"  }}>
-											Description
-										</h1>
-										<h4 style={{ fontSize: "1rem" }}>
-											{announcement.description}
-										</h4>
-									</div>
-									<div className="d-flex">
-										<div className="like">
-											<Likes like={1} />
-										</div>
-										<div className="comment">
-											<img
-												src={comment}
-												alt=""
-												onClick={() => showComments(announcement.id)}
-											/>
-										</div>
-									</div>
-								</div>
-							);
-						})}
+						
 					</div>
 		</div>
 	</div>

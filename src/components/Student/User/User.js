@@ -5,6 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Photo from "../../images/Miss.jpeg"
 import "./User.css"
 import {useEffect,useState} from "react"
+import Profile from "../User/User"
 
 function User() {
   const [Username, setUsername] = useState([]);
@@ -27,11 +28,12 @@ function User() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <h1>Hello <span>{Username.name}</span></h1>
+            <h1 style={{fontSize:"2rem"}}>Hello <span>{Username.name}</span></h1>
             {/* <h1>{Username.email}</h1> */}
           </Nav>
           <Nav>
           <div className="use">
+          {/* <Profile/> */}
           <img src={Photo} alt="Photo" style={{ height: "12vh", borderRadius: "50%"}} />
           {/* <NavDropdown title="Edit" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Name</NavDropdown.Item>
