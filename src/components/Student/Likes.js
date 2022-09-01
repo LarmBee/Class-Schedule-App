@@ -9,9 +9,9 @@ function Likes({like}) {
     }
   return (
     <div>
+        {likes}
         <button onClick={handleClick}>
             <img src={Likess} alt="" />
-            {likes}
         </button>
     </div>
   )

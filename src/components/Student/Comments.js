@@ -13,7 +13,7 @@ function Comments({postId, display, setDisplay}) {
             },
             body: JSON.stringify({
                 announcement_id: postId,
-                comment: comment
+                content: comment
             })
         })
 
@@ -23,7 +23,7 @@ function Comments({postId, display, setDisplay}) {
         <form onSubmit={handleComment}>
             <input type="text" placeholder='comment' className='comment' value={comment} required onChange={e => setComment(e.target.value)}/>
             <br />
-            <button>Add Comment</button>
+            <button className="comment-btn my-2.5">Add</button>
             {/* <input type="submit" className='custom-btn' value="comment" /> */}
             {/* <input type="button" className='custom-btn' value="close" /> */}
         </form>
