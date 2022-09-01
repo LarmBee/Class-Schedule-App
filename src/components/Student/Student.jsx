@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./student.css";
 import User from "../Student/User/User.js";
 import Nav from "../Student/Nav.js";
-import Profile from "../Student/Profile" 
+// import Profile from "../Student/Profile" 
 
 import Announcements from "./Announcement";
 // import Schedules from "./Schedules";
