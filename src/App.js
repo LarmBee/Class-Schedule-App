@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Home from "./components/Home/Home.jsx"
 import Student from './components/Student/Student';
-import Admin from './components/Admin/Dashboard';
 import Announcement from './components/createAnnouncement/announcement';
 import AddUser from './components/Adduser/AddUser';
 import "./App.css";
