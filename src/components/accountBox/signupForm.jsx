@@ -35,10 +35,9 @@ export function SignUpForm(props) {
 			navigate('/student')
 		}catch(error){
 			var errorCode = error.code;
-			var errorMessage = error.message;
 	  
 			  if (errorCode === 'auth/user-not-found') {
-				 alert("user not found");
+				 alert("admin not found");
 			  } else if (errorCode === 'auth/wrong-password') {
 				 alert("wrong password");
 			  } 

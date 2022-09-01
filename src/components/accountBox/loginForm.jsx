@@ -9,7 +9,6 @@ import {
 	MutedLink,
 	SubmitButton,
 } from "./common";
-import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase-config";
 import { useNavigate } from "react-router-dom";
@@ -30,7 +29,13 @@ export function LoginForm(props) {
 			console.log(user);
 			navigate('/student')
 		} catch (error) {
-			alert(error.message);
+			var errorCode = error.code;
+
+			if (errorCode === 'auth/user-not-found') {
+				alert("user not found");
+			 } else if (errorCode === 'auth/wrong-password') {
+				alert("wrong password");
+			 } 
 		}
 	};
 
