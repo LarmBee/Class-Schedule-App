@@ -13,6 +13,16 @@ const Announcements = ({announcement})=> {
         setDisplay(!display)
     }
     
+	const [CommentLists, setCommentLists] = useState([])
+
+
+    
+    const updateComment =  (newComment) => {
+        setCommentLists(CommentLists.concat(newComment))
+    }
+
+	
+
 
     return (
 				<div className="announcement">
@@ -32,7 +42,9 @@ const Announcements = ({announcement})=> {
 					<div className="comment">
 						<img src={comment} alt="" onClick={() => showComments(announcement.id)}/>
 					</div>
+					
 					</div>
+					{/* <Comments CommentLists={CommentLists} postId={announcement.id}  refreshFunction={updateComment} /> */}
 				</div>
         )
 }

@@ -13,7 +13,7 @@ function Comments({postId, display, setDisplay}) {
             },
             body: JSON.stringify({
                 announcement_id: postId,
-                comment: comment
+                content: comment
             })
         })
 
