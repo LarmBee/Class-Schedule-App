@@ -5,7 +5,7 @@
 .typed-intro{
     position: absolute;
     top: 42vh;
-    margin-left: 10%;
+    margin-left: 7.6%
 }
 .typed{
     /* background-image: url("../../images/Schedule.svg"); */
@@ -23,7 +23,7 @@
     width: 13%;
     position: absolute;
     top: 63vh;
-    margin-left: 10%;
+    margin-left: 7.6%;
 }
 .design-intro{
     background-color: #e8ecfa;
@@ -60,7 +60,11 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    text-align: left;
+    align-items: flex-start;
+    
 }
+.typed
 
 .heading-main{
     position: absolute;
