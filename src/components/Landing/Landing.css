@@ -1,11 +1,11 @@
-*{
+*, p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .typed-intro{
     position: absolute;
     top: 42vh;
-    margin-left: 10%;
+    margin-left: 7.6%
 }
 .typed{
     /* background-image: url("../../images/Schedule.svg"); */
@@ -23,16 +23,16 @@
     width: 13%;
     position: absolute;
     top: 63vh;
-    margin-left: 10%;
+    margin-left: 7.6%;
 }
 .design-intro{
     background-color: #e8ecfa;
-    width: 60vw;
-    height: 120vh;
+    width: 60%;
+    height: 120%;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     rotate: 60deg;
     position: absolute;
-    left: 0%;
+    left: -12%;
 }
 
 .main-img{
@@ -60,11 +60,18 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
+    text-align: left;
+    align-items: flex-start;
+    
 }
+.typed
 
 .heading-main{
     position: absolute;
     top: 1%;
     margin-left: 1em;
     z-index: 10;
+}
+.btn{
+    background-color: #e6b323;
 }

@@ -2,7 +2,13 @@
 .main-container {
 	height: 100%;
 	width: 100%;
-	background-color: palegreen;
+	background-color: #e8ecfa;
+}
+.card-contents{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
 }
 .Cont{
     /* background-color: #72FFFF; */
@@ -23,48 +29,142 @@
 	max-height: 100vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	background-color: #e8ecfa;
 }
 
 .schedules {
+	/* background-color: yellow; */
+	width: 28vw;
+	height: 49vh;
 	background-color: #e8ecfa;
-	width: 30vw;
-	height: 40vh;
-	background-color: yellow;
+	width: 25vw;
+	/* height: 60vh; */
+	background-color: #e8ecfa;
 	width: 30w;
 	height: 45vh;
 	float: left;
-	margin: 1em;
+	margin: 2em;
 	border-radius: 10px;
 	color: black;
-	box-shadow: 5px 3px;
+	box-shadow: 5px 5px 5px 5px;
 	overflow: hidden;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 	text-align: left;
+	border: 0.5px solid;
 }
 .schedule-card {
-	width: 30vw;
+	width: 100%;
 	border-radius: 10px;
-	margin-left: 2em;
+	margin-left: 1em;
 	margin-right: 2em;
+	text-align: left;
+	white-space: wrap;
+	overflow-wrap: break-word;
+
+
 }
+::-webkit-scrollbar {
+	display: none;
+  }
+  
 .announcement-container {
 	max-height: 100vh;
+	width: 20vw;
 	margin-top: 2em;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	margin: 0 40px;
 }
 .announcement {
 	background-color: #e8ecfa;
 	height: 100%;
-	width: 23vw;
+	width: 100%;
 	border-radius: 10px;
 	font-size: 20px;
 	margin-top: 1em;
+	position: relative;
 	border: solid 2px;
 	
+}
+a{
+	text-decoration: none;
+	color: red;
 }
 .btn-schedules{
 	border: solid 2px;
 	width: 12vw;
 	border-radius: 10px;
+}
+
+.block{
+	display: block;
+}
+.log{
+	width: 10vw;
+	height: 2vh;
+	border-radius: 50px;
+}
+
+.none{
+	display: none;
+}
+span{
+	font-weight: 800;
+}
+
+.modal-custom{
+	position: absolute;
+	z-index: 1000;
+	background-color: black;
+	color: black;
+	width: 80%;
+	margin: 0 auto;
+	height: 150px;
+	padding: 20px;
+	left: 20%;
+	top: 20%;
+}
+
+.comment-btn{
+	width: 5vw;
+	height: 2vw;
+	border-radius: 30px;
+	background-color: white;
+	color: black;
+}
+
+.modal-custom .comment{
+	width: 100%;
+}
+
+
+@media screen and (max-width: 460px) {
+	.cards-container {
+		float: none;
+		width: 100vw;
+		
+	}
+	.schedules {
+		/* background-color: #e8ecfa; */
+		width: 80vw;
+		
+		float: none;
+		
+		white-space: wrap;
+	}
+	.announcement-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.announcement {
+		width: 80vw;
+	}
+	.announcement-container{
+		width: 100vw;
+	}
+	.card-contents{
+		flex-direction: column;
+	}
 }
