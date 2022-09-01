@@ -9,7 +9,6 @@ import Announcement from './components/createAnnouncement/announcement';
 import AddUser from './components/Adduser/AddUser';
 import "./App.css";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
 // import Student from "./components/Student/Student";
 import User from "./components/userForm/User";
 import { AccountBox } from './components/accountBox';
