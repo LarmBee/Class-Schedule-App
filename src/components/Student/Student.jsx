@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./student.css";
 import User from "../Student/User/User.js";
 import Nav from "../Student/Nav.js";
-// import Feedback from "react-bootstrap/esm/Feedback";
-// import like from "../images/icons8-facebook-like-24.png";
-import unlike from "../images/icons8-thumbs-down-24.png";
-import comment from "../images/icons8-comments-24.png";
-import Likes from "./Likes";
-import Comments from "./Comments";
+// import Profile from "../Student/Profile" 
 
 import Announcements from "./Announcement";
 // import Schedules from "./Schedules";
@@ -55,11 +50,47 @@ function Student() {
     <Announcements announcement={announcement} />
   ));
 
+  const names = [
+    { id: 1, title: "Text" },
+    { id: 2, title: "Ugali" },
+    { id: 3, title: "boots" },
+  ];
+  const [filter, setFilter] = useState("");
+
+  // let items = []
+  // notes.forEach(note => {
+  //   items.push({title: note?.title})
+  // });
+
+  // console.log({notes})
+  // console.log(items)
+
+  const SearchSchedule = (e) => {
+    setFilter(e.target.value);
+  };
+  
+  // console.log(2);
+  // const items = []
+    
+
+  const handleOnSearch = (string, results) => {
+    // onSearch will have as the first callback parameter
+    // the string searched and for the second the results.
+    console.log(string, results);
+  };
+  const handleOnSelect = (item) => {
+    let schedulenSearch = notes?.filter((note) => 
+      note.id === item.id
+    );
+    // the item selected
+    setNotes(schedulenSearch)
+  }
   return (
     <div className="main-container">
       <Nav />
       <User />
-      <Search />
+      <Search handleOnSearch={handleOnSearch} handleOnSelect={handleOnSelect} notes={notes} />
+	  {/* <Profile/> */}
       {/* card of individual events */}
       <div className="card-contents">
 
@@ -104,7 +135,6 @@ function Student() {
 		<div className="announcement-container">
 						<h1 style={{color: "black", fontSize: "2rem",fontWeight:"bold"}}>Announcements</h1>
 						<div className="announcements-container">
-						{/* <h1>Announcements</h1> */}
 					{announcementToDisplay}
 
 					</div>

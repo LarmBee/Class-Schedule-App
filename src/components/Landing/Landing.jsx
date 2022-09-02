@@ -24,7 +24,7 @@ function Landing() {
 				</h1>
 				<h4 className="main-text">
 					Start working with <b>Ratiba.</b>
-					<br /> manage your class schedules in a single application
+					<br /> Manage your class schedules in a single application
 				</h4>
 				<Link to="/login" className="btn">Get Started </Link>
 				

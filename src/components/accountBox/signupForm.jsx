@@ -14,10 +14,13 @@ import {auth} from "../../firebase-config";
 import { useNavigate } from "react-router-dom";
 
 
+
 export function SignUpForm(props) {
 	const [loginEmail, setLoginEmail] =useState("");
 	const [loginPassword, setLoginPassword] =useState("")
 	const { switchToSignin } = useContext(AccountContext);
+	let navigate = useNavigate();
+
 
 	
 
@@ -29,10 +32,20 @@ export function SignUpForm(props) {
 				loginPassword
 			);
 			console.log(user)
+			navigate('/student')
 		}catch(error){
-			alert(error.message);
+			var errorCode = error.code;
+	  
+			  if (errorCode === 'auth/user-not-found') {
+				 alert("admin not found");
+			  } else if (errorCode === 'auth/wrong-password') {
+				 alert("wrong password");
+			  } 
+	  
 		}
+
 	};
+
 
 	return (
 		<BoxContainer>

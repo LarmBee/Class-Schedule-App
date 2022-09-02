@@ -5,6 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Photo from "../../images/Miss.jpeg"
 import "./User.css"
 import {useEffect,useState} from "react"
+import Profile from "../User/User"
 
 function User() {
   const [Username, setUsername] = useState([]);
@@ -32,13 +33,14 @@ function User() {
           </Nav>
           <Nav>
           <div className="use">
+          {/* <Profile/> */}
           <img src={Photo} alt="Photo" style={{ height: "12vh", borderRadius: "50%"}} />
-          {/* <NavDropdown title="Edit" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Name</NavDropdown.Item>
+          <NavDropdown title="Edit" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Image</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Username </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Avatar</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Bio</NavDropdown.Item>
               <NavDropdown.Divider />
-            </NavDropdown> */}
+            </NavDropdown>
           </div>
           </Nav>
         </Navbar.Collapse>
