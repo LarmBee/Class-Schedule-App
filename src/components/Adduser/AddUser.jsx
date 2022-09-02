@@ -9,6 +9,8 @@ function AddUser() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [phoneNno, setPhoneNo] = useState("");
+  const [avatar, setAvatar] = useState("");
   const [errors, setErrors] = useState("");
 
 
@@ -30,6 +32,8 @@ function AddUser() {
           email,
           password,
           confirmPassword,
+          phoneNno,
+          avatar,
         }),
       }).then((r) => {
         if (r.ok) {
@@ -63,6 +67,10 @@ function AddUser() {
                 <input type="password" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} id="StudentPassword" placeholder="Student Password" />
                 <label htmlFor="confirmPassword" className="" id="confirmPassword">Confirm Password</label>
                 <input type="password" className="form-control" id="StudentPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Confirm Password" />
+                <label htmlFor="confirmPassword" className="" id="confirmPassword">Phone no</label>
+                <input type="mobile" className="form-control" id="StudentPassword" value={phoneNno} onChange={(e) => setPhoneNo(e.target.value)} placeholder="Phone_no" />
+                <label htmlFor="confirmPassword" className="" id="confirmPassword">Avatar</label>
+                <input type="text" className="form-control" id="StudentPassword" value={avatar} onChange={(e) => setAvatar(e.target.value)} placeholder="avatar" />
 
 
                 {/* <div>
