@@ -11,6 +11,11 @@ import "./App.css";
 // import Student from "./components/Student/Student";
 import User from "./components/userForm/User";
 import { AccountBox } from './components/accountBox';
+import Admin from "./components/Admin/Admin.jsx";
+import Announcement from './components/createAnnouncement/Announcement';
+import AddUser from './components/Adduser/AddUser.jsx';
+
+
 function App() {
   return (
     <div className="App">
@@ -20,6 +25,11 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/login" element={<AccountBox/>}/>
       <Route path="/student" element={<Student />}/>
+
+      <Route path="/admin" element={<Admin />}/>
+      <Route path="/Announcement" element={<Announcement />}/>
+      <Route path="/adduser" element={<AddUser />}/>
+
       <Route path="/announcement" element={<Announcement />}/>
       <Route path="/adduser" element={<AddUser />}/>
       {/* User/Student section */}

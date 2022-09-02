@@ -1,0 +1,40 @@
+.announcement-container {
+	max-height: 100vh;
+	width: 20vw;
+	margin-top: 2em;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-right: auto;
+}
+.announcement {
+	background-color: #e8ecfa;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 20px;
+	margin-top: 1em;
+	position: relative;
+	border: solid 2px;
+
+	
+}
+.main-container {
+	height: 100%;
+	width: 100%;
+	/* background-color:aliceblue; */
+}
+button{
+	padding: 12px;
+	margin-left: 2vw;
+	background-color:#F2BA10;
+	color: black;
+
+}
+.buttons button{
+	padding: 22px;
+	border-radius: 50px;
+}
+.row{
+	background-color: #e8ecfa;
+	/* height: 80vh; */
+}
