@@ -45,7 +45,7 @@ function AddUser() {
 
 
   return (
-    <div>
+    <div className='createstudent'>
       <div className="container" style={{ height: '100vh' }}>
         <div className="row justify-center">
           <div className="form col-md-6">
@@ -72,7 +72,7 @@ function AddUser() {
                     </ul>
                   ))}
                 </div> */}
-                <Row col-md-6 >
+                <Row col-md-6 className="buttonrow">
                   <Button className="btn btn-primary"  type="submit" value='Create'>Create </Button>
                 </Row>
 

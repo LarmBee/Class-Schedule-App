@@ -9,7 +9,7 @@ Button.btn{
     border: none;
     color: black;
     margin: auto;
-    /* margin-top: 8vh; */
+    margin-top: 8vh;
 
     
 
@@ -19,5 +19,13 @@ Button.btn:hover{
     color: black;
     border: none;
 
+
+}
+.createstudent{
+    background-color: #e8ecfa;
+
+}
+.buttonrow{
+    background-color: #e8ecfa;
 
 }
