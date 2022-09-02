@@ -23,3 +23,18 @@
 	width: 100%;
 	/* background-color:aliceblue; */
 }
+button{
+	padding: 12px;
+	margin-left: 2vw;
+	background-color:#F2BA10;
+	color: black;
+
+}
+.buttons button{
+	padding: 22px;
+	border-radius: 50px;
+}
+.row{
+	background-color: #e8ecfa;
+	/* height: 80vh; */
+}

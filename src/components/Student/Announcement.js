@@ -1,7 +1,6 @@
 import Comments from "./Comments";
 import { useState } from "react";
-import Likes from "./Likes";
-import comment from "../images/icons8-comments-24.png";
+import edit from "../images/edit--v1.png";
 
 
 
@@ -26,11 +25,11 @@ const Announcements = ({announcement})=> {
 					<h4 style={{ fontSize: "1rem" }}>{announcement.description}</h4>
 				</div>
 				<div className="d-flex" style={{justifyContent: "center",alignItems: "center"}}>
-					<div className="like" >
+					{/* <div className="like" >
 						<Likes like={0}/>
-					</div>
-					<div className="comment">
-						<img src={comment} alt="" onClick={() => showComments(announcement.id)}/>
+					</div> */}
+					<div className="edit w-10">
+						<img src={edit} alt="editcomment" onClick={() => showComments(announcement.id)}/>
 					</div>
 					</div>
 				</div>
