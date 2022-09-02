@@ -3,3 +3,21 @@
     background-color: #FFFF;
 
 }
+Button.btn{
+    width: 10vw;
+    background-color:#F2BA10;
+    border: none;
+    color: black;
+    margin: auto;
+    /* margin-top: 8vh; */
+
+    
+
+}
+Button.btn:hover{
+    background-color:#F2BA10;
+    color: black;
+    border: none;
+
+
+}

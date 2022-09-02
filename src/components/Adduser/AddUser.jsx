@@ -49,7 +49,7 @@ function AddUser() {
       <div className="container" style={{ height: '100vh' }}>
         <div className="row justify-center">
           <div className="form col-md-6">
-            <Form >
+            <Form  onSubmit={handleCreateStudent}>
               <div className="form-group ">
                 <Row>
                   <h2 className='create-label p-5' htmlFor="announcement">Welcome, Create Student Profile</h2>
@@ -65,15 +65,15 @@ function AddUser() {
                 <input type="password" className="form-control" id="StudentPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Confirm Password" />
 
 
-                <div>
+                {/* <div>
                   {errors.map((err) => (
                     <ul key={err}>
                       <li>{err}</li>
                     </ul>
                   ))}
-                </div>
+                </div> */}
                 <Row col-md-6 >
-                  <Button className="btn btn-primary" onSubmit={handleCreateStudent} type="submit" value='Create'>Create </Button>
+                  <Button className="btn btn-primary"  type="submit" value='Create'>Create </Button>
                 </Row>
 
 

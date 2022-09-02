@@ -6,7 +6,7 @@ function Announcement() {
 
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
-    const [technical_mentor_id, setTechnical_mentor_id] = useState("");
+    const [technical_mentor_id, setTechnical_mentor_id] = useState(1);
     const [errors, setErrors] = useState("");
 
     function handleCreateAnnouncement(e) {
@@ -23,12 +23,13 @@ function Announcement() {
                 body: JSON.stringify({
                     title,
                     description,
-                    technical_mentor_id,
+                    technical_mentor_id 
                 }),
             }).then((r) => {
                 if (r.ok) {
                     r.json().then((data) => {
                         // onCreateArt(data);
+                        console.log(data);
                     });
                 } else {
                     r.json().then((err) => setErrors(err.errors));
@@ -41,7 +42,7 @@ function Announcement() {
             <div className="container" style={{ height: '100vh' }}>
                 <div className="row justify-center">
                     <div className="form col-md-6">
-                        <Form>
+                        <Form  onSubmit={handleCreateAnnouncement} >
                             <div className="form-group ">
                                 <Row>
                                     <h2 className='create-lh2p-5' htmlFor="announcement">Welcome, Create Announcement</h2>
@@ -53,19 +54,18 @@ function Announcement() {
                                     <textarea className="textarea" placeholder='Type in here ...' value={description} onChange={(e) => setDescription(e.target.value)} >
 
                                     </textarea>
-                                    <input type="text" className="form-control" placeholder="Technical Mentor Id" value={technical_mentor_id} onChange={(e) => setTechnical_mentor_id(e.target.value)}></input>
 
                                     {/* </Col> */}
                                 </Row>
-                                <div>
+                                {/* <div>
                                     {errors.map((err) => (
                                         <ul key={err}>
                                             <li>{err}</li>
                                         </ul>
                                     ))}
-                                </div>
+                                </div> */}
                                 <Row col-md-6 >
-                                    <Button className="btn btn-primary" type="submit" onSubmit={handleCreateAnnouncement} value='Create'>Create </Button>
+                                    <Button className="btn btn-primary" type="submit" value='Create'>Create </Button>
                                 </Row>
 
                             </div>
